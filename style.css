@@ -1288,6 +1288,10 @@ footer{
         height: 80vmax;
         width: 91vmax;
     }
+    #titlePlace1{
+        display: flex;
+        flex-direction: row;
+    }
     #titlePlace>div>span{
         display: flex;
         flex-direction: column;
@@ -1703,4 +1707,233 @@ footer{
     body{
         background-color: green;
     }
+}
+
+
+                        /*ORDER*/
+
+
+
+/*ALL*/
+@media all {
+    #placeOrderMain{
+        height: 60vmax;
+        width: 91vmax;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #datasPlaces{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 0.2vmax solid rgba(57, 37, 27, 0.1);
+        box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
+        border-radius: 1vmax;
+        width: 100%;
+        height: 80%;
+    }
+    #datasPlaces>div{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 90%;
+    }
+    #datasPlaces>hr{
+        display: flex;
+        width: 0.2vmax;
+        box-shadow: 0.15vmax 0.01vmax 0.2vmax rgba(57, 37, 27, 0.2);
+        height: 90%;
+        border-radius: 2vmax;
+        border: transparent;
+        background-color: rgba(57, 37, 27, 0.2);
+    }
+    #beforeStepPlaceOrder{
+        display: flex;
+        align-items: center;
+        height: 5%;
+    }
+    #beforeStepPlaceOrder>svg{
+        display: flex;
+        width: 2%;
+        height: 65%;
+    }
+    #beforeStepPlaceOrder>span{
+        display: flex;
+        color: #39251B;
+        font-size: 2vmax;
+        font-family: 'Raleway';
+    }
+    #titlePlaceOrder{
+        display: flex;
+        flex-direction: row;
+    }
+    #titlePlaceOrder>span{
+        display: flex;
+        margin: 2% 2% 2% 0;
+        font-size: 3.2vmax;
+        font-family: 'Raleway';
+        color: #39251B;
+        align-items: flex-start;
+    }
+    #placesOrder{
+        display: flex;
+        font-size: 2.6vmax;
+        font-family: 'Raleway';
+        color:#39251B;
+    }
+    #datasPlacesLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+    #placeOrderLeft{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 4vmax;
+        font-family: 'Raleway';
+        font-size: 1.6vmax;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        width: 100%;
+        border-radius: 1vmax;
+        margin-top: 3%;
+    }
+    #placeNRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:18%;
+    }
+    #priceNDel{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #placeOrderLeft>div>button{
+        display: flex;
+        width: 4vmin;
+        height: 4vmin;
+        background-color: transparent;
+        border: transparent;
+        background-image: url(images/christ.png);
+        background-size: cover;
+
+    }
+    #placeOrderRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 3.2vmax;
+        font-family: 'Raleway';
+        color: #39251B;
+    }
+    #formPlaceOrder{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.6vmax;
+        height: 75%;
+    }
+    #formPlace{
+        height: 3.5vmax;
+        width: 90%;
+        border-radius: 1vmax;
+        background-color: transparent;
+        font-size: 1.4vmax;
+        font-family: 'Raleway';
+        padding:0 3%;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #inputOrderBy{
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: center;
+        height: 3.5vmax;
+        width: 35%;
+        font-size: 1.6vmax;
+        border-radius: 1vmax;
+        background-color: transparent;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        font-family: 'Raleway';
+    }
+    #placeRow, #placeRow{
+        margin-left: 1%;
+    }
+    #buyNext{
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        font-size: 3vmin;
+        justify-content: space-between;
+        width: 35vmin;
+        color: #39251B;
+        font-family: 'Raleway';
+    }
+    #buyNext>span{
+        display: flex;
+        font-weight: bold;
+        font-size: 4vmin;
+        color: #B68F6E;
+    }
+
+
+
+    
+ }
+ /*PHONE*/
+ @media (max-width:600px) and (orientation:portrait) {
+     body{
+         background-color: red;
+     }
+ }
+ /*TABLET PORTRAIT*/
+ @media (min-width:600px) and (max-width:1024px) and (orientation:portrait){
+     body{
+         background-color: orange;
+     }
+     
+ }
+ /*TABLET LANSCAPE*/
+ @media (min-width:768px) and (max-width:1440px) and (orientation:landscape) {
+     body{
+         background-color: yellow;
+     }
+ }
+ /*BIG SCREEN
+ @media (min-width:1200px) and (orientation:landscape){
+     body{
+         background-color: green;
+     }
+ }*/
+
+
+                        /*CONFIRMATION*/
+
+
+@media all {
+    
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+    
+}
+
+@media (min-width:600px) and (max-width:1024px) and (orientation:portrait){
+
+}
+
+@media (min-width:768px) and (max-width:1440px) and (orientation:portrait){
+
+} {
+    
 }
