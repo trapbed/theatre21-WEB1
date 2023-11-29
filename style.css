@@ -2040,14 +2040,145 @@ footer{
     }
 }
 
-@media (max-width:600px) and (orientation:portrait) {
-    
+@media (max-width:1200px) and (orientation:portrait) {
+    #mainConfirmation{
+        width: 91vmin;
+        height: 73vmax;
+        align-items: center;
+    }
+    #goodOrder{
+        text-align: center;
+    }
+    #inputConfirmation{
+        width: 40%;
+        height: 10vmin;
+        font-size: 3vmin;
+    }
+    #mainConfirmationIn{
+        align-items: center;
+        width: 100%;
+        height: 50%;
+    }
 }
 
-@media (min-width:600px) and (max-width:1024px) and (orientation:portrait){
 
-}
+                        /*TICKETS*/
 
-@media (min-width:768px) and (max-width:1440px) and (orientation:portrait){
+@media all {
+    body{
 
+    }
+    #mainTickets{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway';
+        color: #39251B;
+    }
+    #oneItemTicket{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5% 0 1% 0;
+        width: 91vmax;
+        height: 45vmax;
+        border-radius: 1vmax;
+        border: 0.2vmax solid rgba(57, 37, 27, 0.1);
+        box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
+        
+    }
+    #oneItemTicketLeft, #oneItemTicketRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: violet;
+        width: 43%;
+        height: 85%;
+    }
+    #infoNPlaceTicket{
+        display: flex;
+        flex-direction: column;
+    }
+    #oneItemTicket>hr{
+        background-color: rgba(227, 211, 210, 0.3);
+        border: transparent;
+        width: 0.2vmax;
+        height: 85%;
+    }
+    #logoNAgeTickets>span{
+        display: flex;
+        font-size: 4vmax;
+    }
+    #logoNAgeTickets{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        width: 100%;
+    }
+    #logoTickets{
+        display: flex;
+        width: 33%;
+    }
+    #titlePerfTickets{
+        display: flex;
+        font-size: 4vmax;
+        line-height: 140%;
+    }
+    #dateTimeTickets>span{
+        display: flex;
+        font-size: 2.2vmax;
+        line-height: 140%;
+    }
+    #dateTimeTickets{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 45%;
+    }
+    #placeTicket{
+        display: flex;
+        justify-content: space-between;
+        width:33%;
+        font-size: 2vmax;
+        line-height: 140%;
+    }
+    #placeInMap{
+        display: flex;
+        font-size: 1.4vmax;
+        color: #6C5C59;
+    }
+    #infoNPlaceTicket{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28%;
+        width: 100%;
+    }
+    #infoTickets{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #infoTickets>div>span{
+        line-height: 140%;
+    }
+    #infoTickets>div{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: auto;
+    }
+    #lightTicket{
+        display: flex;
+        color: #6C5C59;
+    }
+    #infoTickets{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4vmax;
+    }
+    oneItemTicketRight{
+
+    }
 }
