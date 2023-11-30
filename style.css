@@ -32,6 +32,141 @@ html, body{
     src: url(font/ofont.ru_Kreadon.ttf);
 }
 
+/*NAVIGATION*/
+
+@media all {
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 5vmax;
+        background-color: #39251B;
+    }
+    .navigation{
+        display: flex;
+        font-family: 'Playfair';
+        color: #B68F6E;
+        font-size: 2vmax;
+    }
+    .navigation:hover{
+        text-decoration: underline;
+    }
+}
+
+
+/*FOOTER*/
+
+@media all {
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #39251B;
+        width: 100%;
+        height: 22vmax;
+    }
+    .intoFoo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #B68F6E;
+        width: 90%;
+        height: 60%;
+    }
+    #intoFooImg{
+        display: flex;
+        width: 18%;
+        height: 55%;
+    }
+    .fooCol{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intoFoo>div>a, .intoFoo>div>span{
+        display: flex;
+        font-family: 'Raleway';
+        font-size: 1.6vmax;
+        line-height: 180%;
+    }
+        
+    .intoFoo>div>a:visited{
+        color: #B68F6E;
+    }
+    .intoFoo>div>a:hover{
+        color: #6C5C59;
+    }
+    .fooCol>div{
+        display: flex;
+        height: 10%;
+    }
+    #fooBold{
+        display: flex;
+        font-weight: bolder;
+    }
+}
+@media all and (orientation:portrait) {
+    #intoFooImg{
+    height: 9vmin;
+    width: 20vmin;
+    }
+}
+
+/*BACK*/
+@media all {
+    #toTitlefromTick{
+        display: flex;
+        align-items: center;
+        height: 8vmax;
+    }
+    #toTitlefromTick>svg{
+        display: flex;
+        width: 2%;
+        height: 30%;
+    }
+    #toTitlefromTick>span{
+        display: flex;
+        color: #39251B;
+        font-size: 2vmax;
+        font-family: 'Raleway';
+    }
+
+}
+@media (orientation:portrait) {
+    #toTitlefromTick{
+        height: 8vmin;
+    }
+    #toTitlefromTick>svg{
+        width: 2%;
+        height: 30%;
+    }
+    #toTitlefromTick>span{
+        font-size: 2vmin;
+    }
+}
+
+#fooCol>a{
+    color: #B68F6E;
+}
+    /*
+    @media (orientation:portrait) {
+        footer{
+            height: 35vmin;
+        }
+    #intoFooImg{
+        height: 9vmin;
+        width: 9.5vmax;
+    }     
+    .fooCol>div{
+        height: 1vmin;
+    }
+    .intoFoo>div>a, .intoFoo>div>span{
+        font-size:2.4vmin;
+    }
+    }
+    */
 
                      /*TITLE SCREEN*/
 
@@ -51,27 +186,7 @@ html, body{
     width: 13vmax;
     height: 65vmin;
 }
-/*NAVIGATION*/
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 5vmax;
-    background-color: #39251B;
-}
-.navigation{
-    display: flex;
-    font-family: 'Playfair';
-    color: #B68F6E;
-    font-size:1.8vmax;
-    text-decoration: none;
-}
-.navigation:hover, .navigation:active{
-    display: flex;
-    text-decoration:underline;
-}
+
 /*HEADER*/
 #mainHeader{
     display: flex;
@@ -383,51 +498,6 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-/*FOOTER*/
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 42.8vmin;
-    background-color: #39251B;
-}
-.intoFoo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-}
-#intoFooImg{
-    display: flex;
-    align-self:start;
-}
-.fooCol{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.fooHead{
-    display: flex;
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size:3.2vmin;
-    color: #B68F6E;
-}
-.fooAll{
-    display: flex;
-    font-family: 'Raleway';
-    font-size:3.2vmin;
-    color: #B68F6E;
-    line-height: 6.6vmin;
-}
-.fooAllL{
-    display: flex;
-    font-family: 'Raleway';
-    font-size: 2vmax;
-    color: #B68F6E;
-    margin-bottom: 2.7vmin;
-}
 }
 /*PHONE TITLE*/
 @media (max-width:600px) and (orientation:portrait) {
@@ -448,16 +518,6 @@ footer{
         height: 7vmax;
     }
     
-
-    /*NAVIGATION*/
-
-
-    nav{
-        width: 100vmin;
-        height: 4vmax;
-        font-size: 3vmax;
-    }
-
 
     /*HEADER*/
 
@@ -611,19 +671,7 @@ footer{
     }
 
 
-    /*FOOTER*/
-
-
-    footer{
-        width: 100vmin;
-    }
-
-    .fooAllL{
-        font-size: 3.2vmin;
-    }
-    .intoFoo{
-        width: 91vmin;
-    }
+    
 }
 /*TABLET PORTRAIT TITLE*/
 @media (min-width:600px) and (max-width:1440px) and (orientation:portrait){
@@ -676,9 +724,7 @@ footer{
     }
 
 
-    footer{
-        height: 30vmax;
-    }
+    
 
     /*WE ARE*/
 
@@ -732,15 +778,11 @@ footer{
         font-size: 4vmin;
     }
     
-    footer{
-        height: 20vmax;
-    }
+    
 }
 /*TABLET LANDSCAPE TITLE*/
 @media (min-width:768px) and (max-width:1440px) and (orientation:landscape) {
-    .navigation{
-        font-size: 3vmin;
-    }
+
     #mainHeader{
         height: 82vmin;
     }
@@ -775,9 +817,6 @@ footer{
         font-size: 5vmin;
     }
 
-    footer{
-        height: 30vmin;
-    }
 
 }
 /*BIG SCREEN TITLE*/
@@ -932,18 +971,11 @@ footer{
     .sortBy{
         font-size: 2.4vmin;
     }
-    .fooCol>*{
-        font-size: 1.4vmax;
-    }
-    footer{
-        height: 15vmax;
-    }
+    
+    
 }
 /*TABLET PORTRAIT AFISHA*/
 @media (max-width:1024px) and (orientation:portrait){
-    .navigation{
-        font-size: 3vmin;
-    }
     .searches{
         height: 15vmax;
     }
@@ -984,9 +1016,6 @@ footer{
 
 /*PERFOMANCE ALL*/
 @media all {
-    .navigation{
-        font-size: 4vmin;
-    }
     #perfomanceHeader{
         display: flex;
         margin: 0;
@@ -1106,8 +1135,11 @@ footer{
         height: 8vmax;
         margin-bottom: 3%;
     }
-   
-    
+    #strPerf{
+        display: flex;
+        width: 2vmax;
+        height: 100%;
+    }
     #beforeStep{
         display: flex;
         align-items: center;
@@ -1126,7 +1158,7 @@ footer{
     }
     #buy{
         display: flex;
-        height: 100%;
+        height: 70%;
         align-items: center;
         font-family: 'Playfair';
         font-size: 4vmin;
@@ -1356,7 +1388,8 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        height:19%;
+        height:22%;
+        align-items: center;
     }
     #places>div>button{
         display: flex;
@@ -1367,22 +1400,22 @@ footer{
         font-family: 'Raleway';
         font-size: 1.6vmax;
         width: 6%;
-        height: 100%;
+        height: 80%;
     }
     #firstLine>button{
         display: flex;
         border: transparent;
-        background-color: #E3D3D2;
+        accent-color: #E3D3D2;
     }
     #secondLine>button{
         display: flex;
         border: transparent;
-        background-color: #B68F6E;
+        accent-color: #B68F6E;
     }
     #thirdLine>button, #fourthLine>button{
         display: flex;
         border: transparent;
-        background-color: transparent;
+        accent-color: transparent;
         box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
     }
     #scene{
@@ -1422,15 +1455,15 @@ footer{
         width: 3.3vmax;
         height: 3.3vmax;
     }
-    #firstLinePrice{
+    #firstLine>button, #firstLinePrice{
         display: flex;
         background-color: #E3D3D2;
     }
-    #secondLinePrice{
+    #secondLinePrice, #secondLine>button{
         display: flex;
         background-color: #B68F6E;
     }
-    #thirdLinePrice{
+    #thirdLinePrice, #thirdLine>button{
         display: flex;
         box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
     }
@@ -1458,8 +1491,9 @@ footer{
         justify-content: space-evenly;
         padding: 1% 3%;
         height: 100%;
-        width: 10vmax;
-        margin-right: 3%;
+        width: 12vmax;
+        visibility: hidden;
+        margin-right: 1%;
         box-shadow: 0.2vmax 0.3vmin 0.3vmax 0.1vmax rgba(57, 37, 27, 0.2);
         border: 0.1vmax solid rgba(227, 211, 210, 0.3);
         border-radius: 0.5vmax;
@@ -1582,7 +1616,7 @@ footer{
         width: 6%;
         height: 100%;
     }
-    #firstLine>button{
+    #firstLinePrice, #firstLine>button{
         display: flex;
         border: transparent;
         background-color: #E3D3D2;
@@ -1629,21 +1663,21 @@ footer{
         font-size: 1.6vmax;
         margin-left: 10%;
     }
-    #scenePrice>div>div{
+    #scenePrice>div>button{
         display: flex;
         border-radius: 100%;
         width: 3.3vmax;
         height: 3.3vmax;
     }
-    #firstLinePrice{
+    #firstLinePrice, #firstLine>button{
         display: flex;
         background-color: #E3D3D2;
     }
-    #secondLinePrice{
+    #secondLinePrice, #secondLine>button{
         display: flex;
         background-color: #B68F6E;
     }
-    #thirdLinePrice{
+    #thirdLinePrice, #thirdLine>button{
         display: flex;
         box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
     }
@@ -2064,9 +2098,6 @@ footer{
                         /*TICKETS*/
 
 @media all {
-    body{
-
-    }
     #mainTickets{
         display: flex;
         flex-direction: column;
@@ -2098,6 +2129,7 @@ footer{
         flex-direction: column;
     }
     #oneItemTicket>hr{
+        box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
         background-color: rgba(227, 211, 210, 0.3);
         border: transparent;
         width: 0.2vmax;
@@ -2277,4 +2309,337 @@ footer{
         font-size: 2vmax;
         font-family: 'Raleway';
     }
+}
+
+@media (max-width:1200px) and (orientation:portrait){
+    #mainTickets{
+        width: 91vmin;
+    }
+    #oneItemTicket{
+        width: 91vmin;
+        height: 50vmin;
+        border-radius: 1vmin;
+        border: 0.2vmin solid rgba(57, 37, 27, 0.1);
+        box-shadow: 0.2vmin 0.3vmax 1px 0.07vmin rgba(57, 37, 27, 0.2);  
+
+    }
+    #oneItemTicket>hr{
+        width: 0.2vmin;
+        height: 85%;
+    }
+    #logoNAgeTickets>span{
+        font-size: 4vmin;
+    }
+    #titlePerfTickets{
+        font-size: 4vmin;
+    }
+    #dateTimeTickets>span{
+        font-size: 2.2vmin;
+    }
+    #dateTimeTickets{
+        width: 45%;
+    }
+    #placeTicket{
+        width:33%;
+        font-size: 2vmin;
+    }
+    #placeInMap{
+        font-size: 1.4vmin;
+    }
+    #infoNPlaceTicket{
+        height: 28%;
+        width: 100%;
+    }
+    #infoTickets>div{
+        height: 100%;
+        width: auto;
+    }
+    #infoTickets{
+        font-size: 1.4vmin;
+    }
+    #qrIconNTxt{
+        height: 53%;
+        width: 100%;
+    }
+    #qrNTxt{
+        height: 67%;
+    }
+    #qrNTxt>img{
+        width: 14vmin;
+        height: 14vmin;
+    }
+    #qrNTxt>span{
+        width: 45%;
+    }
+    #icons>img{
+        width:5vmin;
+        height: 5vmin;
+    }
+    #copyrightTicket{
+        height: 20%;
+        width: 100%;
+    }
+    #oneItemTicketRight{
+        font-size: 1vmin;
+        line-height: 175%;
+    }
+
+    #buttonsBeforeTick{
+        height:5vmin;
+        width: 40%;
+    }
+    #toRoolsTicket{
+        font-size: 1.4vmin;
+
+    }
+    #dowmloadTicket{
+        width: 60%;
+        height: 80%;
+        border-radius: 1vmin;
+        font-size: 1.6vmin;
+    }
+
+    #toTitlefromTick{
+        height: 8vmin;
+    }
+    #toTitlefromTick>svg{
+        width: 2%;
+        height: 30%;
+    }
+    #toTitlefromTick>span{
+        font-size: 2vmin;
+    }
+}
+
+
+
+
+/*LOGIN MODAL*/
+@media all {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #titleLogIn{
+        font-size: 4vmax;
+        margin-bottom: 5%;
+        align-self: center;
+    }
+    
+    #logInModal>p{
+        display: flex;
+    }
+    #logInModal>input{
+        border-radius: 0.8vmax;
+        height: 12%;
+        padding:0 3%;
+        width: 93%;
+        font-size: 1.4vmax;
+        color: #6C5C59;
+        font-family: 'Raleway';border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #logIn>label{
+        font-size: 1.6vmax;
+    }
+    #buttonsLogIn{
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6vmax;
+        height: 10%;
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+    }
+    #buttonRightLogIn, #buttonRightSignIn{
+        background-color: #39251B;
+        height: 100%;
+        border-radius: 0.5vmax;
+        color: #B68F6E;
+        align-items: center;
+        justify-content: center;
+        padding: 1% 4%;
+    }
+    #buttonsLogIn>*{
+        border: transparent;
+    }
+    #buttonLeftLogIn, #buttonLeftSignIn{
+        color: #39251B;
+        height: 100%;
+        width: 45%;
+        align-items: center;
+    }
+    #buttonLeftSignIn:hover, #buttonLeftLogIn:hover{
+        text-decoration: underline;
+    }
+    #rememBerPassword{
+        align-self: center;
+        width: 50%;
+        color: #39251B;
+        font-size: 1.2vmax;
+        display: flex;
+        flex-direction: row;
+    }
+    #recover{
+        color: #6C5C59;
+        padding-left: 3%;
+    }
+    #recover:hover{
+        color: #6C5C59;
+        text-decoration: underline;
+    }
+    
+    #buttonRight{
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            font-size: 1.6vmax;
+            display: flex;
+            flex-direction: row;
+            height: 3.2vmax;
+            width: 100%;
+    }
+    #logInModal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40vmax;
+        font-family: 'Raleway';
+        color: #39251B;
+        padding: 2% 4%;
+        height: 30vmax;
+        transition: all 1s ease-in;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        border-radius: 1vmax;
+        position: fixed;
+        left: 50%; 
+        top: -50%;
+        overflow: auto; 
+    }
+}
+
+#noneBeforeModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 6, 2, 0.63);
+    visibility: hidden;
+}
+
+/*SIGN UP*/
+@media all {
+    #signUpForm{
+        position: fixed; 
+        top: -50%;
+        left: 50%;
+        background-color: white;
+        border-radius: 1vmax;
+        z-index: 3;
+        overflow: hidden; 
+        width: 40%;
+        height: 80%;
+        transition: all 1s ease-in;
+        display: flex;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1vmax;
+        color: #39251B;
+        padding: 2% 4%;
+        font-family: 'Raleway';
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #buttonsSignUp>*{
+        border: transparent;
+    }
+    .christ{
+        position: absolute;
+        width: 5%;
+        right: 5%;
+        top: 5%;
+
+    }
+    #twoInputs>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
+    }
+    #twoInputs>div>input{
+        display: flex;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        width: 90%;
+        height: 45%;
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #twoInputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 99%;
+        height: 5.5vmax;
+    }
+    label{
+        align-items: start;
+        font-size: 1.4vmax;
+    }
+    #twoInputs>div{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #buttonsSignUp{
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        font-size: 1.6vmax;
+        display: flex;
+        flex-direction: row;
+        height: 3.2vmax;
+        width: 100%;
+    }
+    input{
+        height: 2.2vmax;
+        width: 90%;
+        border-radius: 0.3vmax;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 4%;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        font-family: 'Raleway';
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        font-size: 1.2vmax;
+        color: #6C5C59;
+    }
+    #titleSignUp{
+        font-size: 3vmax;
+        margin-bottom: 5%;
+        align-self: center;
+    } 
+}
+
+@media all {
+    #addNewPerfomance{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 4vmax;
+        margin: 2% 0;
+        border-radius: 1vmax;
+        background-color: transparent;
+        font-size: 2.4vmax;
+        font-family: 'Raleway';
+        color: #39251B;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+
+    }
+    
 }
