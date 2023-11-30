@@ -20,3 +20,6 @@
         strPlace.style.stroke='#39251B';
         beforeStepPlace.style.color='#39251B';
     })
+
+/*NAVIGATION*/
+let logIn=document.getElementById('logIn');
