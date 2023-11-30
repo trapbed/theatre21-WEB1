@@ -1103,27 +1103,26 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         width: 85%;
-        height: 8vmin;
+        height: 8vmax;
         margin-bottom: 3%;
     }
-    #buyOrNextStep>span{
-        display: flex;
-        font-size: 2.2vmax;
-    }
+   
+    
     #beforeStep{
         display: flex;
-        height: 100%;
-        width: 23vmax;
-        font-size:3vmin;
-        width: 40%;
-        color: #39251B;
         align-items: center;
-        justify-content: space-between;
-        font-family: 'Raleway';
+        height: 8vmax;
+    }
+    #beforeStep>svg{
+        display: flex;
+        width: 4%;
+        height: 55%;
     }
     #beforeStep>span{
-        padding: 0 7%;
-        font-size: 2.2vmax;
+        display: flex;
+        color: #39251B;
+        font-size: 2vmax;
+        font-family: 'Raleway';
     }
     #buy{
         display: flex;
@@ -2091,7 +2090,6 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: violet;
         width: 43%;
         height: 85%;
     }
@@ -2178,7 +2176,105 @@ footer{
         flex-direction: row;
         font-size: 1.4vmax;
     }
-    oneItemTicketRight{
+    #qrIconNTxt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 53%;
+        width: 100%;
+    }
+    #qrNTxt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 67%;
+    }
+    #qrNTxt>img{
+        display: flex;
+        width: 14vmax;
+        height: 14vmax;
+    }
+    #qrNTxt>span{
+        display: flex;
+        width: 45%;
+    }
+    #icons>img{
+        display: flex;
+        width:5vmax;
+        height: 5vmax;
+    }
+    #icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #copyrightTicket{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 20%;
+        width: 100%;
+    }
+    #directorNOrg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #6C5C59;
+    }
+    #director, #orgTicket{
+        display: flex;
+        flex-direction: column;
 
+    }
+    #oneItemTicketRight{
+        font-size: 1vmax;
+        line-height: 175%;
+        color: #39251B;
+    }
+
+    #buttonsBeforeTick{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: space-between;
+        height:5vmax;
+        width: 40%;
+    }
+    #toRoolsTicket{
+        display: flex;
+        font-size: 1.4vmax;
+        color: #6C5C59;
+
+    }
+    #dowmloadTicket{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 100%;
+        font-size: 1.6vmax;
+        color: #39251B;
+        border-radius: 1vmax;
+        border: 0.2vmax solid rgba(57, 37, 27, 0.1);
+        box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);  
+
+    }
+
+    #toTitlefromTick{
+        display: flex;
+        align-items: center;
+        height: 8vmax;
+    }
+    #toTitlefromTick>svg{
+        display: flex;
+        width: 2%;
+        height: 30%;
+    }
+    #toTitlefromTick>span{
+        display: flex;
+        color: #39251B;
+        font-size: 2vmax;
+        font-family: 'Raleway';
     }
 }
