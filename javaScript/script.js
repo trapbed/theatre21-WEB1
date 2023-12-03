@@ -20,3 +20,9 @@
         strPlace.style.stroke='#39251B';
         beforeStepPlace.style.color='#39251B';
     })
+<<<<<<< HEAD:javaScript/script.js
+=======
+
+/*NAVIGATION*/
+let logIn=document.getElementById('logIn');
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad:script.js

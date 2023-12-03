@@ -146,10 +146,13 @@ html, body{
         font-size: 2vmin;
     }
 }
+<<<<<<< HEAD
 
 #fooCol>a{
     color: #B68F6E;
 }
+=======
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     /*
     @media (orientation:portrait) {
         footer{
@@ -974,7 +977,11 @@ html, body{
     .sortBy{
         font-size: 2.4vmin;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     
 }
 /*TABLET PORTRAIT AFISHA*/
@@ -2315,6 +2322,11 @@ html, body{
 }
 
 @media (max-width:1200px) and (orientation:portrait){
+<<<<<<< HEAD
+=======
+    body{
+    }
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     #mainTickets{
         width: 91vmin;
     }
@@ -2424,18 +2436,48 @@ html, body{
         align-items: center;
         justify-content: center;
     }
+<<<<<<< HEAD
     
+=======
+    #logInModal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 45vmax;
+        height: 35vmax;
+        border-radius: 1vmax;
+        background-color: transparent;
+    }
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     #titleLogIn{
         font-size: 4vmax;
         margin-bottom: 5%;
         align-self: center;
     }
+<<<<<<< HEAD
     
     #logInModal>p{
         display: flex;
     }
     #logInModal>input{
         border-radius: 0.8vmax;
+=======
+    #logIn{
+        font-family: 'Raleway';
+        display: flex;
+        width: 83%;
+        height: 90%;
+        color: #39251B;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #logIn>p{
+        display: flex;
+    }
+    #logIn>input{
+        border-radius: 0.5vmax;
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
         height: 12%;
         padding:0 3%;
         width: 93%;
@@ -2452,11 +2494,18 @@ html, body{
         align-items: center;
         font-size: 1.6vmax;
         height: 10%;
+<<<<<<< HEAD
         width: 98%;
         display: flex;
         flex-direction: row;
     }
     #buttonRightLogIn, #buttonRightSignIn{
+=======
+        display: flex;
+        flex-direction: row;
+    }
+    #buttonRight{
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
         background-color: #39251B;
         height: 100%;
         border-radius: 0.5vmax;
@@ -2465,6 +2514,7 @@ html, body{
         justify-content: center;
         padding: 1% 4%;
     }
+<<<<<<< HEAD
     #buttonsLogIn>*{
         border: transparent;
     }
@@ -2475,6 +2525,12 @@ html, body{
         align-items: center;
     }
     #buttonLeftSignIn:hover, #buttonLeftLogIn:hover{
+=======
+    #buttonLeft{
+        color: #39251B;
+    }
+    #buttonLeft:hover{
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
         text-decoration: underline;
     }
     #rememBerPassword{
@@ -2482,8 +2538,11 @@ html, body{
         width: 50%;
         color: #39251B;
         font-size: 1.2vmax;
+<<<<<<< HEAD
         display: flex;
         flex-direction: row;
+=======
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     }
     #recover{
         color: #6C5C59;
@@ -2493,6 +2552,7 @@ html, body{
         color: #6C5C59;
         text-decoration: underline;
     }
+<<<<<<< HEAD
     
     #buttonRight{
             justify-content: space-between;
@@ -2575,20 +2635,57 @@ html, body{
         flex-direction: column;
         justify-content: space-between;
         width: 49%;
+=======
+}
+
+
+/*SIGN UP*/
+@media all {
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-evenly;
+        width: 40vmax;
+        height: 40vmax;
+        background-color: firebrick;
+        border-radius: 1vmax;
+        color: #39251B;
+        padding: 5%;
+        font-family: 'Raleway';
+        background-color: transparent;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #signUpForm{
+        
+    }
+    #twoInputs>div{
+        display: flex;
+        width: 48%;
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     }
     #twoInputs>div>input{
         display: flex;
         border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+<<<<<<< HEAD
         width: 90%;
         height: 45%;
+=======
+        width: 86%;
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
         box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
     }
     #twoInputs{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+<<<<<<< HEAD
         width: 99%;
         height: 5.5vmax;
+=======
+        width: 100%;
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
     }
     label{
         align-items: start;
@@ -2606,16 +2703,28 @@ html, body{
         font-size: 1.6vmax;
         display: flex;
         flex-direction: row;
+<<<<<<< HEAD
         height: 3.2vmax;
         width: 100%;
     }
     input{
         height: 2.2vmax;
+=======
+        height: 8%;
+        width: 100%;
+    }
+    input{
+        height: 3vmax;
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
         width: 90%;
         border-radius: 0.3vmax;
         align-items: center;
         justify-content: center;
+<<<<<<< HEAD
         padding: 2% 4%;
+=======
+        padding: 1% 4%;
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
         border: 0.1vmax solid rgba(227, 211, 210, 0.3);
         font-family: 'Raleway';
         box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
@@ -2628,6 +2737,7 @@ html, body{
         align-self: center;
     } 
 }
+<<<<<<< HEAD
 
 @media all {
     #addNewPerfomance{
@@ -2801,3 +2911,5 @@ body{
         color: #39251B;
     }
 }
+=======
+>>>>>>> aeb2c11a660afab27456a97e1eaf2c49988f29ad
