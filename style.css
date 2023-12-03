@@ -831,7 +831,7 @@ html, body{
 
 
 /*ALL AFISHA*/
-@media all{
+@media all {
     .searches{
         display: flex;
         flex-direction: column;
@@ -847,23 +847,26 @@ html, body{
         background-color: transparent;
         justify-content: center;
         width: 80%;
+        height: 4vmax;
+        padding: 0;
     }
     #searchPool{
         display: flex;
         width: 80%;
+        padding: 0 4%;
         font-family:'Raleway';
         position: relative;
         color: #39251B;
         font-size: 2.4vmin;
         border-radius: 1vmin;
         border: 0.1vmin solid #39251B;
-        height: 8vmin;
+        height: 100%;
     }
     #searchSvg{
         display: flex;
         align-self: center;
         position: absolute;
-        right: 25vmax;
+        right: 22vmax;
     }
     #searchSend{
         display: flex;
@@ -944,7 +947,7 @@ html, body{
     }
 }
 /*PHONE AFISHA*/
-@media (max-width:600px) and (orientation:portrait){
+@media (orientation:portrait){
     .searches{
         height: 20vmin;
     }
@@ -971,7 +974,7 @@ html, body{
     .sortBy{
         font-size: 2.4vmin;
     }
-    
+
     
 }
 /*TABLET PORTRAIT AFISHA*/
@@ -2517,6 +2520,7 @@ html, body{
         position: fixed;
         left: 50%; 
         top: -50%;
+        z-index: 4;
         overflow: auto; 
     }
 }
@@ -2529,6 +2533,7 @@ html, body{
     height: 100%;
     background-color: rgba(18, 6, 2, 0.63);
     visibility: hidden;
+    z-index: 2;
 }
 
 /*SIGN UP*/
@@ -2539,7 +2544,7 @@ html, body{
         left: 50%;
         background-color: white;
         border-radius: 1vmax;
-        z-index: 3;
+        z-index: 5;
         overflow: hidden; 
         width: 40%;
         height: 80%;
@@ -2632,7 +2637,7 @@ html, body{
         width: 20%;
         height: 4vmax;
         margin: 2% 0;
-        border-radius: 1vmax;
+        border-radius: 0.4vmax;
         background-color: transparent;
         font-size: 2.4vmax;
         font-family: 'Raleway';
@@ -2641,5 +2646,158 @@ html, body{
         box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
 
     }
+    #perfomancesAdmin{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+    }
+    .perfomanceAdmin{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vmin;
+
+    }
+    .adminPerfomaceWithoutBtn{
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+        width: 90vmax;
+    }
+    .textAboutPerfAdmin{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        right: 5%;
+        z-index: 1;
+        width: 40%;
+        height: 60%;
+        background-color: white;
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #imagePerfAdmin{
+        display: flex;
+    }
+    .adminForBtn{
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+        width: 50%;
+        height: 20%;
+    }
+    .adminForBtn>button{
+        display: flex;
+        align-self: center;
+        padding: 2% 10%;
+        font-family: 'Raleway';
+        font-size: 3vmin;
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        color: #39251B;
+        border-radius: 0.4vmax;border: 0.1vmax solid rgba(108, 92, 89, 0.675);
+        background-color: transparent;
+    }
+    .deletePerf:hover{
+        background-color: rgba(98, 0, 0, 0.3);
+        border: transparent;
+    }
+}
+
+
+/*ROOLS*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+#roolTime, #roolIn, #roolWardobe, #roolClap, #roolBan, #roolExit{
+    display: flex;
+    flex-direction: column;
+    width: 84vmax;
+    height: auto;
     
+    margin: 2% 0 2% 0 ;
+}
+#roolTime>div, #roolIn>div, #roolWardobe>div, #roolClap>div, #roolBan>div, #roolExit>div{
+    display: flex;
+    padding: 2% 3%;
+    margin-bottom: 2%;
+    font-size: 1.6vmax;
+    color: #39251B;
+    line-height: 150%;
+    font-family: 'Raleway';
+    border-radius: 0.4vmax;border: 0.1vmax solid rgba(108, 92, 89, 0.675);
+    box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+}
+
+
+
+/*WE ARE*/
+@media all {
+    body{
+        display: flex;
+    }
+    #sliderAboutWe{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        width: 90vmax;
+        margin: 3% 0;
+        flex-direction: column;
+    }
+    #elemSliderWe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 3vmax;
+        margin-top: 3%;
+        width: 40%;
+    } 
+    #Text1AboutWe, #Text2Aboutwe{
+        display: flex;
+        flex-direction: column;
+        color: #39251B;
+        padding: 2% 3%;
+        width: 84%;
+        border-radius: 0.4vmax;border: 0.1vmax solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }   
+    #titleWe{
+        display: flex;
+        font-size: 2.6vmax;
+        line-height: 200%;
+        font-family:'Playfair';
+        font-weight: lighter;
+    }
+    #aboutTitleWe{
+        display: flex;
+        font-size: 1.6vmax;
+        line-height: 160%;
+        font-family: 'Raleway';
+    }
+    #weCenter{
+        display: flex;
+        margin: 3% 0;
+        width: 85%;
+    }
+    #goToAfisha{
+        display: inline-block;
+        justify-content: start;
+        width: 85%;
+        color: #39251B;
+        margin: 3% 0;
+        font-size: 1.6vmax;
+        font-family: 'Raleway';
+    }
+    #afishaWe{
+        display: inline-block;
+        color: #6C5C59;
+
+        text-decoration: underline;
+    }
+    #afishaWe:hover{
+        color: #39251B;
+    }
 }
