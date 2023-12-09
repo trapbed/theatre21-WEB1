@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Афиша</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <div id="noneBeforeModal"></div>
 
     <form action="#" method="get" id="logInModal">
@@ -30,12 +29,12 @@
             <p id="titleSignUp">Зарегистрироваться</p>
             <div id="twoInputs">
                 <div>
-                    <label for="s">Фамилия</label>
-                    <input type="text" required id="s" name="surname">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" required name="surname">
                 </div>
                 <div>
-                    <label for="n">Имя</label>
-                    <input type="text" required id="n" name="name">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" required name="name">
                 </div>
             </div>
             <label for="email">Электронная почта</label>
@@ -67,121 +66,128 @@
         <a class="navigation" id="logInNav" href="#">Войти</a>
     </nav>
 
-    <main id="afishaMain">
+    <main id="mainContact">
+        <span id="titleCont">Контакты</span>
         
-        <div class="searches">
-            <form class="search" method="get">
-                <input id="searchPool" type="text">
-                <input type="submit" name="submit" value="&nbsp;" id="searchSvg">
-            </form>
-            <div class="searchButt1">
-                <div class="sortBy" id="today">сегодня</div>
-                <div class="sortBy" id="tomorrow">завтра</div>
-                <div class="sortBy" id="thisWeek">на этой неделе</div>
-                <div class="sortBy" id="thisMonth">в этом месяце</div>
+        <div id="mapNInfo">
+            <iframe width="40%" height="80%" id="mapContacts" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1965.2790333641772!2d30.345679976903472!3d59.93017956278169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5ee3fb77b%3A0xdf141f9e76b3fc09!2z0KLQtdCw0YLRgCDQuNC8LiDQm9C10L3RgdC-0LLQtdGC0LA!5e1!3m2!1sru!2sru!4v1700502812112!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="infoContacts">
+                <div id="addrressContacts">
+                    <span>Адрес : </span>
+                    <span>Владимирский пр., 12, Санкт-Петербург, 191025</span>
+                </div>
+                <div id="phoneContacts">
+                    <span>Телефон горячей линии:</span>
+                    <span>+7 (952)- 812-72-30</span>
+                </div>
+                <div id="mailContacts">
+                    <span>Электронная почта :</span>
+                    <span>sopr@gmail.com</span>
+                </div>
             </div>
         </div>
 
-        <div id="perfomancesAfisha">
-            <div class="soonPerfomanceinAfisha">
-                <!--perfomance--><img class="perfomanceAfisha" src="../images/soon1.png" alt="Ты правда не видишь что там ?">
-                <div class="aboutPerfAfisha">
-                    <span class="titlePerfAfisha">Пищеблок</span>
-                    <div class="datePriceAfisha"> 
-                        <span class="datePerfAfisha">18.11.2023</span>
-                        <span>12 : 00</span>
-                        <span class="pricePerfAfisha">от 1200 руб</span>
+        
+        <div id="stationsContacts">
+            <span id="titleStations">Ближайшие остановки </span>
+            <div id="intoStation">
+                <div class="intoStationPeace">
+                    <div>
+                        <span class="titlePeace">Троллейбусная остановка</span>
+                        <span class="aboutPeace">Остановочный пункт находится в 260 метрах от входа в здание театра. Для того чтобы пройти от остановки ко входу в театр необходимо пересечь наземный регулируемый пешеходный переход через Владимирскую площадь.
+                            Владимирский проспект, дом 12.</span>
                     </div>
-                    <span class="ganreAfisha">трагедия</span>
-                    <span class="aboutPerfTxtAfisha">Ты не сможешь остаться прежним, посмотрев «Оскара». Не важно, каким ты придешь, важно, каким ты выйдешь! </span>
-                    <a href="../html/Perfomance.html" class="morePerfAboutAfisha">Подробнее</a>
+                    <img src="../images/contactsStation1.png" alt="Троллейбусная остановка">
+                </div>
+
+                <div class="intoStationPeace">
+                    <div>
+                        <span class="titlePeace">Станция метро</span>
+                        <span class="aboutPeace">Вестибюль станции метро «Достоевская» находится в 7 минутах ходьбы от здания театра на расстоянии 300 метров от входа в здание театра по адресу: Владимирский проспект, д. 21.</span>
+                    </div>
+                    <img src="../images/contactsStation2.png" alt="Метро">
+                </div>
+
+                <div class="intoStationPeace">
+                    <div>
+                        <span class="titlePeace">Автобусная остановка</span>
+                        <span class="aboutPeace">Остановочный пункт расположен в 105 метрах от входа в здание театра и 5 минутах ходьбы. Путь движения от остановочного пункта доступен для людей с нарушением опорно-двиг. аппарата, в том числе на креслах-колясках.
+                            Владимирский проспект, дом 23.</span>
+                    </div>
+                    <img src="../images/contactsStation3.png" alt="Автобус">
                 </div>
             </div>
-            
-            <div class="afishaMT"></div>
-
-            <div class="soonPerfomanceinAfisha">
-                <!--perfomance--><img class="perfomanceAfisha" src="../images/soon1.png" alt="Ты правда не видишь что там ?">
-                <div class="aboutPerfAfisha">
-                    <span class="titlePerfAfisha">Пищеблок</span>
-                    <div class="datePriceAfisha"> 
-                        <span class="datePerfAfisha">18.11.2023</span>
-                        <span>12 : 00</span>
-                        <span class="pricePerfAfisha">от 1200 руб</span>
-                    </div>
-                    <span class="ganreAfisha">трагедия</span>
-                    <span class="aboutPerfTxtAfisha">Ты не сможешь остаться прежним, посмотрев «Оскара». Не важно, каким ты придешь, важно, каким ты выйдешь! </span>
-                    <a href="../html/Perfomance.html" class="morePerfAboutAfisha">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="afishaMT"></div>
-
-            <div class="soonPerfomanceinAfisha">
-                <!--perfomance--><img class="perfomanceAfisha" src="../images/soon1.png" alt="Ты правда не видишь что там ?">
-                <div class="aboutPerfAfisha">
-                    <span class="titlePerfAfisha">Пищеблок</span>
-                    <div class="datePriceAfisha"> 
-                        <span class="datePerfAfisha">18.11.2023</span>
-                        <span>12 : 00</span>
-                        <span class="pricePerfAfisha">от 1200 руб</span>
-                    </div>
-                    <span class="ganreAfisha">трагедия</span>
-                    <span class="aboutPerfTxtAfisha">Ты не сможешь остаться прежним, посмотрев «Оскара». Не важно, каким ты придешь, важно, каким ты выйдешь! </span>
-                    <a href="../html/Perfomance.html" class="morePerfAboutAfisha">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="afishaMT"></div>
-            
-            <div class="soonPerfomanceinAfisha">
-                <img class="perfomanceAfisha" src="../images/soon1.png" alt="Ты правда не видишь что там ?">
-                <div class="aboutPerfAfisha">
-                    <span class="titlePerfAfisha">Пищеблок</span>
-                    <div class="datePriceAfisha"> 
-                        <span class="datePerfAfisha">18.11.2023</span>
-                        <span>12 : 00</span>
-                        <span class="pricePerfAfisha">от 1200 руб</span>
-                    </div>
-                    <span class="ganreAfisha">трагедия</span>
-                    <span class="aboutPerfTxtAfisha">Ты не сможешь остаться прежним, посмотрев «Оскара». Не важно, каким ты придешь, важно, каким ты выйдешь! </span>
-                    <a href="../html/Perfomance.html" class="morePerfAboutAfisha">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="afishaMT"></div>
-
         </div>
 
+
+        <div id="hoursContacts">
+            <div>
+                <span class="titleHour">Режим работы театра</span>
+                <div id="hoursContactsHour1">
+                    <div>
+                        <span>пн</span>
+                        <span id="wknd">выходной</span>
+                    </div>
+
+                    <div>
+                        <span>вт</span>
+                        <span>11:00 - 13:00<br>
+                              14:00 - 20:00</span>
+                    </div>
+
+                    <div>
+                        <span>ср-сб</span>
+                        <span>09:00 - 13:00<br>
+                              14:00 - 20:00</span>
+                    </div>
+
+                    <div>
+                        <span>вс</span>
+                        <span>09:00 - 20:00<br>
+                              без обеда</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr id="contactHr">
+
+            <div>
+                <span class="titleHour">Режим работы  администрации</span>
+                <div id="hoursContactsHour2">
+                    <span>сб - пн</span>
+                    <span>выходной</span>
+                    <span>вт - пт</span>
+                    <span>11:00 - 13:00</span>
+                    <span>14:00 - 19:00 </span>
+                </div>
+            </div>
+        </div>
     </main>
-
-    <div id="afishaNothing"></div>
 
 
     <footer>
         <div class="intoFoo">
-            <img id="intoFooImg" alt="логотип" src="../images/logoFooter.png">                
+            <img id="intoFooImg" alt="logo" src="../images/logoFooter.png">               
             <div class="fooCol">
-                <a class="fooHead">Театр</a>
-                <span>&nbsp;</span>
-                <a class="fooAll">Фото</a>
-                <a class="fooAll" href="../html/afisha.html">Афиша</a>
-                <a class="fooAll">Труппа</a>
+                <span class="fooBold">Театр</span>
+                <div class="fooAll"></div>
+                <a >Фото</a>
+                <a  href="../html/afisha.html">Афиша</a>
+                <a >Труппа</a>
             </div>
             <div class="fooCol">
-                <a class="fooHead">Посетителям</a>
-                <span>&nbsp;</span>
+                <span class="fooBold">Посетителям</span>
+                <div class="fooAll"></div>
                 <a class="fooAll" href="../html/rools.html">Правила</a>
-                <a class="fooAll" href="../html/aboutWe.html">О нас</a>
+                <a href="../html/aboutWe.html">О нас</a>
             </div>
             <div class="fooCol">
-                <span class="fooAllL">+ 7 (952)812 36 72</span>
-                <span class="fooAllL">sopr@gmail.com</span>
+                <span >+ 7 (952)812 36 72</span>
+                <span >sopr@gmail.com</span>
             </div>
         </div>
     </footer>
-
-<script src="../js/modal.js"></script>
-<script src="../js/logInCheck.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/logInCheck.js"></script>
 </body>
 </html>

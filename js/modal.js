@@ -32,3 +32,4 @@ christ[i].addEventListener('click', function(){
     bg.style.visibility="hidden";
     
 })};
+

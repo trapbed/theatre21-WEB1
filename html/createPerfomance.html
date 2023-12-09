@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Создание представления</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <a href="../html/title1.html" id="logo">
@@ -16,77 +16,91 @@
     </a>
 
     <nav>
-        <a class="navigation" id="afisha" href="../html/adminPannel.html">Афиша</a>
-        <a class="navigation" id="about" href="#">О нас</a>
-        <a class="navigation" id="contavts" href="#">Контакты</a>
+        <a class="navigation" id="afisha" href="../html/afisha.html">Афиша</a>
+        <a class="navigation" id="about" href="../html/aboutWe.html">О нас</a>
+        <a class="navigation" id="contavts" href="../html/contacts.html">Контакты</a>
         <a class="navigation" id="root" href="../html/rools.html">Правила</a>
-        <a class="navigation" id="logInNav" href="#">Войти</a>
+        <a class="navigation" value="" id="logInNav" href="#">Войти</a>
     </nav>
 
+    <main id="createPerfomance">
+        <form action="go" method="get">
+            <div class="oneDivCreate">
+                <label for="">Название представления</label>
+                <input type="text">
+            </div>
 
-    <div class="">
-        <label for="">Название представления</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Жанр представления</label>
+                <select name="genre" id="genre">
+                    <option value="балет">Балет</option>
+                    <option value="мистерия">Мистерия</option>
+                    <option value="комедия">Комедия</option>
+                </select>
+            </div>
 
-    <div class="">
-        <label for="">Жанр представления</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Возрастное органичение </label>
+                <select name="age" id="age">
+                    <option value="0">0+</option>
+                    <option value="6">6+</option>
+                    <option value="12">12+</option>
+                    <option value="18">18+</option>
+                </select>
+            </div>
 
-    <div class="">
-        <label for="">Возрастное органичение </label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Наличие антракта</label>
+                <select name="antract" id="antract">
+                    <option value="есть">Есть</option>
+                    <option value="нет">Нет</option>
+                </select>
+            </div>
 
-    <div class="">
-        <label for="">Наличие антракта</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Дата представления</label>
+                <input type="date">
+            </div>
 
-    <div class="">
-        <label for="">Дата представления</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Время начала представления</label>
+                <input type="time">
+            </div>
 
-    <div class="">
-        <label for="">Время начала представления</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Длительность представления</label>
+                <input type="time">
+            </div>
 
-    <div class="">
-        <label for="">Длительность представления</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Описание представления</label>
+                <textarea name="" id="" cols="4" rows="2"></textarea>
+            </div>
 
-    <div class="">
-        <label for="">Описание представления</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Краткое описание</label>
+                <textarea name="" id="" cols="4" rows="2"></textarea>
+            </div>
 
-    <div class="">
-        <label for="">Краткое описание</label>
-        <input type="text">
-    </div>
+            <div class="oneDivCreate">
+                <label for="">Добавить фото</label>
+                <input type="file" accept="Выберите файл">
+            </div>
 
-    <div class="">
-        <label for="">Добавить фото</label>
-        <input type="text">
-    </div>
+            <input type="button" class="oneDivCreate" value="Задать цену билетам">
+            
 
-    <button class="">
-        Задать цену билетам
-    </button>
+            <div class="oneDivCreateRow">
+                <div id="buyOrNextStep" >
+                    <a href="../html/title1.html" id="toTitlefromTick">
+                        <img src="../images/Vector 7.png" id="arrow" alt="arrow">
+                        <span>Вернуться к афише</span>
+                    </a>
+                </div>
 
-    <div class="">
-        <button class="">
-            <svg width="7%" height="16%" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="beforeStepSvgPlace" d="M9 1L2 10L9 19" stroke="#39251B" stroke-width="2"/>
-            </svg>
-            <span>Вернуться на главную</span>
-
-        </button>
-        <button class="">Сохранить</button>
-    </div>
+                <input type="submit" value="Сохранить" class="">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
