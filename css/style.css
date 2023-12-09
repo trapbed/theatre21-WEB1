@@ -32,9 +32,334 @@ html, body{
     src: url("../font/ofont.ru_Kreadon.ttf");
 }
 
+                        /*LOGO UNDER HEADER*/
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vmax;
+    width: 100%;
+}
+#logoty{
+    display: flex;
+    width: 13vmax;
+    height: 65vmin;
+}
+                        /*BACK*/
+@media all {
+    #toTitlefromTick{
+        display: flex;
+        align-items: center;
+        height: 8vmin;
+    }
+    #toTitlefromTick>img{
+        display: flex;
+        height: 50%;
+    }
+    #toTitlefromTick>span{
+        display: flex;
+        color: #39251B;
+        font-size: 2vmax;
+        font-family: 'Raleway';
+    }
+}
+@media (orientation:portrait) {
+    #toTitlefromTick{
+        height: 5vmax;
+        align-items: center;
+    }
+    #toTitlefromTick>img{
+        height: 50%;
+    }
+    #toTitlefromTick>span{
+        font-size: 3vmin;
+    }
+}
+#fooCol>a{
+    color: #B68F6E;
+}
+
+                        /*LOGIN MODAL*/
+@media all {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #titleLogIn{
+        font-size: 4vmax;
+        margin-bottom: 5%;
+        background-color: red;
+        align-self: center;
+    }
+    
+    #logInModal>p{
+        display: flex;
+    }
+    #logInModal>input{
+        border-radius: 0.8vmax;
+        height: 12%;
+        padding:0 3%;
+        width: 93%;
+        font-size: 1.4vmax;
+        color: #6C5C59;
+        font-family: 'Raleway';border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #logIn>label{
+        font-size: 1.6vmax;
+    }
+    #buttonsLogIn{
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6vmax;
+        height: 10%;
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+    }
+    #buttonRightLogIn, #buttonRightSignIn{
+        background-color: #39251B;
+        height: 100%;
+        border-radius: 0.5vmax;
+        color: #B68F6E;
+        align-items: center;
+        justify-content: center;
+    }
+    #buttonsLogIn>*{
+        border: transparent;
+    }
+    #buttonLeftLogIn, #buttonLeftSignIn{
+        color: #39251B;
+        height: 100%;
+        width: 45%;
+        align-items: center;
+    }
+    #buttonLeftSignIn:hover, #buttonLeftLogIn:hover{
+        text-decoration: underline;
+    }
+    #rememBerPassword{
+        align-self: center;
+        width: 50%;
+        color: #39251B;
+        font-size: 1.2vmax;
+        display: flex;
+        flex-direction: row;
+    }
+    #recover{
+        color: #6C5C59;
+        padding-left: 3%;
+    }
+    #recover:hover{
+        color: #6C5C59;
+        text-decoration: underline;
+    }
+    #buttonRight{
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            font-size: 1.6vmax;
+            display: flex;
+            flex-direction: row;
+            height: 3.2vmax;
+            width: 100%;
+    }
+    #logInModal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40vmax;
+        font-family: 'Raleway';
+        color: #39251B;
+        padding: 2% 4%;
+        height: 30vmax;
+        transition: all 1s ease-in;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        border-radius: 1vmax;
+        position: fixed;
+        left: 50%; 
+        top: -50%;
+        z-index: 4;
+        overflow: auto; 
+    }
+}
+#noneBeforeModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 6, 2, 0.63);
+    visibility: hidden;
+    z-index: 2;
+}
+
+                        /*SIGN UP*/
+@media all{
+    #signUpForm{
+        position: fixed; 
+        top: -50%;
+        left: 50%;
+        background-color: white;
+        border-radius: 1vmax;
+        z-index: 5;
+        overflow: hidden; 
+        width: 40%;
+        height: 80%;
+        transition: all 1s ease-in;
+        display: flex;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1vmax;
+        color: #39251B;
+        padding: 2% 4%;
+        font-family: 'Raleway';
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #buttonsSignUp>*{
+        border: transparent;
+    }
+    .christ{
+        position: absolute;
+        width: 5%;
+        right: 5%;
+        top: 5%;
+    }
+    #twoInputs>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
+    }
+    #twoInputs>div>input{
+        display: flex;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        width: 90%;
+        height: 45%;
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #twoInputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 99%;
+        height: 5.5vmax;
+    }
+    #signUpForm>label{
+        align-items: start;
+        font-size: 1.4vmax;
+    }
+    #twoInputs>div{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #buttonsSignUp{
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        font-size: 1.6vmax;
+        display: flex;
+        flex-direction: row;
+        height: 3.2vmax;
+        width: 100%;
+    }
+    #signUpForm>input{
+        height: 2.2vmax;
+        width: 90%;
+        border-radius: 0.3vmax;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 4%;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        font-family: 'Raleway';
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        font-size: 1.2vmax;
+        color: #6C5C59;
+    }
+    #titleSignUp{
+        font-size: 3vmax;
+        margin-bottom: 5%;
+        background-color: red;
+        align-self: center;
+    } 
+}
+                        /*MODAL DELETE*/
+@media all {
+
+    #adminDelete{
+        display: flex;
+        height: 35%;
+        width: 55%;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vmax;
+        position: fixed;
+        background-color: white;
+        z-index: 5;
+        top:-70%;
+        text-align: center;
+        overflow: hidden; 
+        transition: all 1s ease-in;
+        flex-direction: column;
+        font-family: 'Raleway';
+        color: #39251B;
+        border-radius: 0.6vmax;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+    }
+    #adminDelete>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        height: 85%;
+    }
+    #delete{
+        font-size: 2vmax;
+    }
+    #christ{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 15%;
+    }
+    #deleteButtons{
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+    }
+    #deleteButtons>button{
+        display: flex;
+        color: #E3D3D2;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #6C5C59;
+        font-family: 'Raleway';
+        border: 0.1vmax solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        border-radius: 0.3vmax;
+        font-size: 2.2vmax;
+    }
+    #deleteButtons>button:hover{
+        background-color: rgba(98, 0, 0, 0.7);
+    }
+}
+@media (orientation:portrait) {
+    #adminDelete{
+        font-size: 5vmin;
+    }
+    #deleteButtons>button{
+        font-size: 4.5vmin;
+    }
+}
 
                         /*ABOUT WE*/
-
 @media all{
     body{
         display: flex;
@@ -156,8 +481,7 @@ html, body{
         width: 80%;
     }
 }
-
-/*CONFIRMATION*/
+                        /*CONFIRMATION*/
 @media all {
     #mainConfirmation{
         display: flex;
@@ -211,7 +535,6 @@ html, body{
         color: #39251B;
     }
 }
-
 @media (orientation:portrait) {
     #mainConfirmation{
         width: 91vmin;
@@ -232,10 +555,6 @@ html, body{
         height: 50%;
     }
 }
-
-
-
-
                         /*AFISHA*/
 @media all {
     #afishaMain{
@@ -348,6 +667,7 @@ html, body{
     }
     .titlePerfAfisha{
         font-size: 4vmax;
+        font-weight: 100;
         font-family: 'Playfair';
     }
     .aboutPerfTxtAfisha{
@@ -483,8 +803,6 @@ html, body{
         height: 5vmin;
     }
 }
-
-
                         /*CONTACTS*/
 @media all{
     body{
@@ -499,7 +817,7 @@ html, body{
         align-items: center;
         justify-content: space-evenly;
         width: 90vmax;
-        height: 140vmax;
+        height: auto;
     }
     #titleCont{
         display: flex;
@@ -521,13 +839,14 @@ html, body{
     }
     #mapContacts{
         display: flex;
-        height: 90%;
+        height: 30vmax;
+        width: 30vmax;
     }
     #stationsContacts{
         display: flex;
         flex-direction: column;
         width: 84vmax;
-        height: 90vmin;
+        height: 45vmax;
         font-family: 'Playfair';
         color: #39251B;
         border-radius: 0.4vmax;
@@ -543,10 +862,13 @@ html, body{
         display: flex;
         font-size: 2vmax;
         line-height: 200%;
+        align-self: center;
     }
     .aboutPeace{
         display: flex;
         font-size: 1.2vmax;
+        width: 95%;
+        text-align: center;
     }
     #titleStations, #titlePeace{
         display: flex;
@@ -556,13 +878,12 @@ html, body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 65vmin;
+        height: 80%;
         width: 50%;
     }
     #infoContacts>div{
         display: flex;
         flex-direction: column;
-        height: 25%;
         width: 90%;
     }
     #infoContacts>div>span{
@@ -590,14 +911,13 @@ html, body{
         display: flex;
         flex-direction: column;
     }
-
     #hoursContacts{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         font-family: 'Raleway';
-        height: 84vmin;
+        height: 40vmax;
         width: 84vmax;
         color: #39251B;
         border: 0.1vmax solid rgba(108, 92, 89, 0.675);
@@ -609,7 +929,7 @@ html, body{
         flex-direction: column;
         align-items: center;
         width: 40%;
-        height: 70vmin;
+        height: 30vmax;
     }
     #hoursContactsHour1, #hoursContactsHour2{
         display: flex;
@@ -617,7 +937,7 @@ html, body{
         justify-content: space-evenly;
         text-align: center;
         font-size: 2.2vmax;
-        height: 70vmin;
+        height: 30vmax;
         width: 60%;
     }
     #hoursContactsHour1>div{
@@ -631,7 +951,7 @@ html, body{
         width: 60%;
     }
     #hoursContactsHour2{
-        height: 50vmin;
+        height: 22vmax;
         align-items: center;
     }
     .titleHour{
@@ -643,10 +963,118 @@ html, body{
     #contactHr{
         display: flex;
         height: 80%;
-        width: 0.1vmax;
+        background-color: #39251b93;
+        border: 0.01vmin solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
+    }
+    .contactsMT{
+        height: 5vmax;
+    }
+    #contactsStartMT{
+        height: 3vmax;
     }
 }
-
+@media (orientation:portrait) {
+    #mainContact{
+        width: 90vmin;
+        height: auto;
+    }
+    #titleCont{
+        font-size: 5vmin;
+        line-height: 200%;
+        width: 84vmin;
+    }
+    #mapContacts{
+        height: 35vmin;
+        width: 35vmin;
+    }
+    #mapNInfo{
+        width: 90vmin;
+        height: 40vmin;
+    }
+    #stationsContacts{
+        width: 84vmin;
+        height: 45vmin;
+    }
+    #titleStations{
+        font-size: 5vmin;
+        width: 90%;
+        align-self: center;
+    }
+    #stationsContacts{
+        height: 115vmin;
+        width: 100%;
+    }
+    .titlePeace{
+        font-size: 3vmin;
+    }
+    .aboutPeace{
+        font-size: 2.2vmin;
+    }
+    #infoContacts{
+        height: 80%;
+        width: 50%;
+    }
+    #infoContacts>div{
+        width: 90%;
+    }
+    #infoContacts>div>span{
+        font-size: 3vmin;
+    }
+    .intoStationPeace{
+        width: 90%;
+        align-self: center;
+        height: 25vmin;
+    }
+    .intoStationPeace>img{
+        height: 25vmin;
+    }
+    #hoursContacts{
+        height: 55vmin;
+        width: 90vmin;
+        border-radius: 0.4vmin;
+    }
+    #hoursContacts>div{
+        width: 60%;
+        height: 90%;
+    }
+    #hoursContactsHour1, #hoursContactsHour2{
+        font-size: 3.2vmin;
+        height: 30vmin;
+        width: 60%;
+    }
+    #intoStation{
+        flex-direction: column;
+    }
+    .intoStationPeace{
+        flex-direction: row;
+    }
+    #wknd{
+        width: 60%;
+    }
+    #hoursContactsHour1{
+        height: 100%;
+    }
+    #hoursContactsHour2{
+        height: 60%;
+    }
+    .titleHour{
+        width: 60%;
+        font-size: 3.4vmin;
+    }
+    #contactHr{
+        border: transparent;
+        height: 80%;
+        border: 0.1vmin solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
+    }
+    .contactsMT{
+        height: 5vmin;
+    }
+    #contactsStartMT{
+        height: 3vmin;
+    }
+}
                         /*PERFOMANCE*/
 /*PERFOMANCE ALL*/
 @media all {
@@ -748,26 +1176,11 @@ html, body{
     }
     #titlePerf{
         font-family: 'Playfair';
+        font-weight: 100;
     }
     #agePerf{
         font-family: 'Raleway';
-    }/*
-    .morePerfAboutAfisha{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:50%;
-        height:9%;
-        color: #39251B;
-        border: 0.1vmin solid #39251B;
-        font-family: 'Raleway';
-        font-size: 2.2vmin;
-        text-decoration: none;
     }
-    .morePerfAboutAfisha:hover{
-        color: #B68F6E;
-        background-color: #39251B;
-    }*/
     #perfomanceBigTxt{
         display: flex;
         flex-direction: column;
@@ -939,8 +1352,6 @@ html, body{
         width: 15vmax;
     }
 }
-
-
                         /*PLACE*/
 /*PLACE ALL*/
 @media all {
@@ -966,6 +1377,7 @@ html, body{
     #titlePlace1>span{
         display: flex;
         font-size: 3.6vmax;
+        font-weight: 100;
         font-family: 'Raleway';
         color: #39251B;
         align-items: flex-start;
@@ -1232,7 +1644,6 @@ html, body{
         font-size: 4vmin;
     }
 }
-
                         /*PLACE ORDER*/
 /*ALL*/
 @media all {
@@ -1497,7 +1908,6 @@ html, body{
         height: 30%;
     }
  }
-
                         /*ROOLS*/
 @media all{
     body{
@@ -1585,7 +1995,6 @@ html, body{
         box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
     }
 }
-
                         /*TICKETS*/
  @media all {
     #mainTickets{
@@ -1880,8 +2289,7 @@ html, body{
         height: 7vmin;
     }
 }
-
-                       /*ADMIN PANNEL*/
+                        /*ADMIN PANNEL*/
 @media all{
     #forCreate{
         display: flex;
@@ -1979,10 +2387,7 @@ html, body{
         background-color: yellow;
     }
 }
-
-
-                    /*NAVIGATION*/
-
+                        /*NAVIGATION*/
 @media all {
     nav{
         display: flex;
@@ -2003,10 +2408,7 @@ html, body{
         text-decoration: underline;
     }
 }
-
-
                     /*FOOTER*/
-
 @media all {
     footer{
         display: flex;
@@ -2062,86 +2464,25 @@ html, body{
     width: 20vmin;
     }
 }
-
-                    /*BACK*/
-
-@media all {
-    #toTitlefromTick{
-        display: flex;
-        align-items: center;
-        height: 8vmin;
-    }
-    #toTitlefromTick>img{
-        display: flex;
-        height: 50%;
-    }
-    #toTitlefromTick>span{
-        display: flex;
-        color: #39251B;
-        font-size: 2vmax;
-        font-family: 'Raleway';
-    }
-}
-
-@media (orientation:portrait) {
-    #toTitlefromTick{
-        height: 5vmax;
-        align-items: center;
-    }
-    #toTitlefromTick>img{
-        height: 50%;
-    }
-    #toTitlefromTick>span{
-        font-size: 3vmin;
-    }
-}
-
-
-#fooCol>a{
-    color: #B68F6E;
-}
-    /*
-    @media (orientation:portrait) {
-        footer{
-            height: 35vmin;
-        }
-    #intoFooImg{
-        height: 9vmin;
-        width: 9.5vmax;
-    }     
-    .fooCol>div{
-        height: 1vmin;
-    }
-    .intoFoo>div>a, .intoFoo>div>span{
-        font-size:2.4vmin;
-    }
-    }
-    */
-
                      /*TITLE SCREEN*/
 /*ALL TITLE*/
 @media all {
-    /*LOGO UNDER HEADER*/
-    #logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 8vmax;
+    /*EMPTY*/
+    .titleMT1{
+        height: 5vmax;
         width: 100%;
     }
-    #logoty{
-        display: flex;
-        width: 13vmax;
-        height: 65vmin;
+    .titleMT2{
+        height: 3vmax;
+        width: 100%;
     }
-
     /*HEADER*/
     #mainHeader{
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
-        height: 100.1vmin;
+        height: 50vmax;
         background-repeat: no-repeat; 
         background-position: center center; 
         background-clip: content-box;
@@ -2170,12 +2511,11 @@ html, body{
     #intoHeader2{
         display: flex;
         flex-direction: column;
-    }
-    #theatreHeader{
-        display: flex;
-        font-family: 'mak';
         font-size: 3.8vmax;
         color: #B68F6E;
+    }
+    #theatreHeader{
+        font-family: 'mak';
         text-transform: uppercase;
     }
     #hrHeader{
@@ -2186,20 +2526,21 @@ html, body{
         border:none;
     }
     #txtHeader{
-        display: flex;
-        color: #B68F6E;
-        font-size: 3.8vmax;
         font-family:'Kreadon';
     }
-    /*SOON
-    #soon{
+    /*MAIN*/
+    #titleMain{
+        width: 90vmax;
+    }
+    /*SOON*/
+    #soonTitle{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         align-self: center;
-        width: 90.1vmax;
-        height: 217.2vmin;
+        width: 90vmax;
+        height: auto;
     }
     #soonHeader{
         display: flex;
@@ -2211,14 +2552,15 @@ html, body{
         font-family: 'Playfair';
         color: #39251B;
         font-size: 4vmax;
-        line-height: 180%;
+        line-height: 160%;
+        font-weight: 100;
         text-transform: uppercase;
     }
     .headerHr{
         display: flex;
         width: 22vmax;
-        height: 0.2vmin;
-        box-shadow: 0 0.4vmin 0.7vmin 0 rgba(57, 37, 27, 0.4);
+        height: 0.1vmax;
+        box-shadow: 0 0.4vmax 0.7vmax 0 rgba(57, 37, 27, 0.4);
         border:none;
         background-color: #39251B;
     }
@@ -2226,13 +2568,14 @@ html, body{
         display: flex;
         position: relative;
         align-items: center;
-        width: 90.1vmax;
+        width: 90vmax;
     }
-    .perfomance{
+    .perfomanceTitleImg{
         display: flex;
         width: 52.2vmax;
+        height: auto;
     }
-    .aboutPerf{
+    .aboutPerfTitle{
         display: flex;
         position: absolute;
         flex-direction: column;
@@ -2240,14 +2583,14 @@ html, body{
         justify-content: space-around;
         right: 0;
         background-color: white;
-        box-shadow: 0 0.13vmin 0.4vmin 0.13vmax rgba(57, 37, 27, 0.4);
+        box-shadow: 0 0.1vmax 0.4vmax 0.13vmax rgba(57, 37, 27, 0.4);
         width: 45%;
-        height: 80%;
+        height: 90%;
     }
     .titlePerf{
         display: flex;
         font-family: 'Playfair';
-        font-size: 6.4vmin;
+        font-size: 4vmax;
         color: #39251B;
     }
     .datePrice{
@@ -2256,17 +2599,17 @@ html, body{
         align-items: center;
         justify-content: space-between;
         font-family: 'Raleway';
-        font-size: 3.2vmin;
+        font-size: 2vmax;
         width: 80%;
         color: #39251B;
     }
     .aboutPerfTxt{
         display: flex;
-        width: 37vmax;
+        width: 90%;
         font-family: 'Raleway';
         text-align: center;
         color: #39251B;
-        font-size: 3.2vmin;
+        font-size: 2vmax;
     }
     .morePerfAbout{
         display: flex;
@@ -2277,11 +2620,11 @@ html, body{
         color: #39251B;
         border: 0.1vmax solid #39251B;
         font-family: 'Raleway';
-        font-size: 3.2vmin;
+        font-size: 2vmax;
         text-decoration: none;
     }
     .morePerfAbout:hover{
-        background-color: rgba(57, 37, 27, 1);
+        background-color: #39251B;
         color: #B68F6E;
     }
     #moreBtn{
@@ -2291,15 +2634,15 @@ html, body{
         background-color: transparent;
         text-decoration: none;
         color:#39251B;
-        height: 8vmin;
-        width: 27vmax;
+        height: 5vmax;
+        width: 25%;
         font-family: 'Raleway';
         font-size: 1.8vmax;
-        border-radius: 1vmin;
-        border:0.1vmin solid #39251B;
+        border-radius: 1vmax;
+        border:0.1vmax solid #39251B;
     }
     #moreBtn:hover{
-        background-color: rgba(57, 37, 27, 1);
+        background-color: #39251B;
         color: #B68F6E;
     }
     /* WE ARE*/
@@ -2308,23 +2651,23 @@ html, body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 91vmax;
-        height:110vmin;
+        width: 90vmax;
+        height:auto;
     }
     #weAreImg{
         display: flex;
-        height: 90%;
-        width: 95%;
+        width: 85vmax;
+        height: auto;
     }
     .weAreSlider{
         display: flex;
         flex-direction: column;
-        height: 35%;
+        height: 20vmax;
         justify-content: space-between;
     }
     .sliderCircle{
         display: flex;
-        height: 4vmin;
+        height: 2vmax;
         width: 2vmax;
         background-color: #D9D9D9;
         border-radius: 30vmax;
@@ -2334,12 +2677,11 @@ html, body{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 150vmin;
-        width: 90.1vmax;
+        height: auto;
+        width: 90vmax;
     }
     .AnQTxt{
         display: flex;
-        height: 13.2vmin;
         align-items: center;
         flex-direction: column;
     }
@@ -2348,7 +2690,7 @@ html, body{
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        height: 65%;
+        height: 40vmax;
     }
     .AsknQuestBlk{
         display: flex;
@@ -2357,7 +2699,7 @@ html, body{
         justify-content: space-evenly;
         width: 32%;
         height: 100%;
-        border-radius: 1vmin;
+        border-radius: 1vmax;
         box-shadow: 0.3vmax 0.5vmin 0.5vmin 0.07vmax rgba(57, 37, 27, 0.2);
     }
     .ask{
@@ -2366,20 +2708,16 @@ html, body{
         text-transform: lowercase;
         width: auto;
         align-self: center;
-        text-align: center;
-        font-size: 3.2vmin;
+        font-size: 2.4vmax;
+        width: 90%;
         color: #39251B;
-    }
-    .askNothing{
-        display: flex;
-        height:8.5vmin;
     }
     .question{
         display: flex;
         font-family: 'Kreadon';
-        font-size: 3.2vmin;
+        font-size: 2vmax;
         color: #39251B;
-        width: 25vmax;
+        width: 90%;
     }
     #anotherAskQuest>.ask{
         width: auto;
@@ -2390,16 +2728,22 @@ html, body{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        align-self: start;
         color: #39251B;
         width: 85vmax;
-        height: 115vmin;
+        height: auto;
+    }
+    #map{
+        display: flex;
+        width: 40vmax;
+        height: 50vmax;
     }
     #beforeMap{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 35vmax;
-        height: 85vmin;
+        height: 45vmax;
         justify-content: space-around;
     }
     .headhour{
@@ -2408,8 +2752,9 @@ html, body{
         align-self: center;
         width: auto;
         text-align: center;
+        font-weight: 100;
         color: #39251B;
-        font-size: 6.4vmin;
+        font-size: 3vmax;
         font-family: 'Raleway';
     }
     .hours{
@@ -2419,7 +2764,7 @@ html, body{
         align-items: flex-end;
         height: 80vmin;
         width:100%;
-        font-size: 5vmin;
+        font-size: 3vmax;
         font-family: 'Raleway';
         color: #39251B;
     }
@@ -2429,7 +2774,7 @@ html, body{
         justify-content: space-between;
         color: #39251B;
         width: 90%;
-        font-size: 6.4vmin;
+        font-size: 3vmax;
         font-family: 'Raleway';
     }
     .weekDay, #wednesday{
@@ -2449,649 +2794,160 @@ html, body{
         width: 100%;
     }
 }
-/*PHONE TITLE*/
-@media (max-width:600px) and (orientation:portrait) {
-    /*LOGO*/
-    body{
-        width: 100vmin;
+@media (orientation:portrait) {
+    /*EMPTY*/
+    .titleMT1{
+        height: 5vmin;
+        width: 100%;
     }
-    #logo{
-        width: 91vmin;
-        height: 8vmax;
+    .titleMT2{
+        height: 3vmin;
+        width: 100%;
     }
-    #logoty{
-        width: 18vmin;
-        height: 7vmax;
-    }
-    
-
     /*HEADER*/
-
-
     #mainHeader{
-        width: 100vmin;
-        height: 30vmax;
+        width: 100%;
+        height: 50vmin;
+    }
+    #nothingLeft{
+        width: 7%;
     }
     #intoHeader{
-        height: 60%;
+        width:33%;
+        height:70%;
     }
-    #intoHeader1{
-        width: 70%;
-        height: auto;
+    #logoty2{
+        width: 23vmin;
     }
-    #intoHeader2>span{
+    #intoHeader2{
         font-size: 3.8vmin;
     }
     #hrHeader{
-        width: 60%;
-        height: 0.2vmin;
+        width: 20vmin;
+        height: 0.3vmin;
     }
-
-
-    /*SOON
-
-
-    #soon{
-        width: 100vmin;
-        height: 57vmax;
-        justify-content: space-evenly;
+    /*MAIN*/
+    #titleMain{
+        width: 90vmin;
+    }
+    /*SOON*/
+    #soonTitle{
+        width: 90vmin;
     }
     .headers{
-        font-size: 3vmax;
+        font-size: 4vmin;
+        line-height: 160%;
+        font-weight: 100;
+    }
+    .headerHr{
+        width: 22vmin;
+        height: 0.1vmin;
+        box-shadow: 0 0.4vmin 0.7vmin 0 rgba(57, 37, 27, 0.4);
+        border:none;
     }
     .soonPerfomance{
-        width: 91%;
+        width: 90vmin;
     }
-    .perfomance{
-        width: 60%;
-        height: auto;
+    .perfomanceTitleImg{
+        width: 52.2vmin;
     }
-    
-    .soonPerfomance{
-        width: 91%;
-    }
-    .perfomance{
-        width: 60%;
-        height: auto;
+    .aboutPerfTitle{
+        box-shadow: 0 0.1vmin 0.4vmin 0.13vmin rgba(57, 37, 27, 0.4);
+        width: 45%;
+        height: 90%;
     }
     .titlePerf{
-        font-size: 2.2vmin;
+        font-size: 4vmin;
     }
     .datePrice{
         font-size: 2vmin;
+        width: 80%;
     }
     .aboutPerfTxt{
-        font-size: 1.2vmax;
         width: 90%;
-        justify-content: space-evenly;
+        font-size: 2vmin;
     }
     .morePerfAbout{
-        font-size: 1.2vmax;
-    }
-    #soonNothing{
-        display: none;
+        width:50%;
+        height:10%;
+        border: 0.1vmin solid #39251B;
+        font-size: 2vmin;
     }
     #moreBtn{
-        height: 4%;
-        width: 45%;
-        font-size:1.4vmax;
+        height: 5vmin;
+        width: 25%;
+        font-size: 1.8vmin;
+        border-radius: 1vmin;
+        border:0.1vmin solid #39251B;
     }
-
-
-    /*WE ARE*/
-
-
+    /* WE ARE*/
     .weAre{
-        width: 91vmin;
-        height: 19vmax;
+        width: 90vmin;
     }
-    /*
     #weAreImg{
-        height: 100%;
-        width: 95%;
+        width: 85vmin;
     }
-    */
+    .weAreSlider{
+        height: 20vmin;
+    }
     .sliderCircle{
+        height: 2vmin;
         width: 2vmin;
-        height:1vmax;
+        border-radius: 30vmin;
     }
-
-
     /*ASK N QUESTION*/
-
-
     .AskNQuestion{
-        width: 91vmin;
-        height: 55vmax;
-        justify-content: space-evenly;
-    }
-    .AnQTxt{
-        height: auto;
+        width: 90vmin;
     }
     .threeBlocks{
-        flex-direction: column;
-        align-items: center;
         width: 100%;
-        height: 80%;
+        height: 40vmin;
     }
-    .AsknQuestBlk, #anotherAskQuest{
-        width: 100%;
-        height: 30%;
-    }
-    .ask{
-        font-size: 3.2vmin;
-    }
-    .askNothing{
-        height:1.5vmax;
-    }
-    .question{
-        font-size: 3vmin;
-        width: 90%;
-    }
-
-
-    /*MAP N HOURS*/
-
-
-    .mapNHours{
-        width: 91vmin;
-        height: 40vmax;
-    }
-
-    #beforeMap{
-        width: 45%;
-        height: 80%;
-    }
-    .headhour{
-        font-size: 2.4vmax;
-    }
-    .hourDay{
-        width: 90%;
-    }
-    .hours{
-        width: 100%;
-    }
-    .hours>*{
-        font-size: 2vmax;
-    }
-
-
-    
-}
-/*TABLET PORTRAIT TITLE*/
-@media (min-width:600px) and (max-width:1440px) and (orientation:portrait){
-    /*HEADER*/
-    #mainHeader{
-        height: 45vmax;
-        font-size: 2vmax;
-    }
-    #intoHeader2{
-        width: 150%;
-    }
-    #txtHeader{
-        font-size: 5vmin;
-    }
-
-    /*SOON
-    #soon{
-        height: 130vmin;
-        width: 91vmin;
-    }
-    .soonPerfomance{
-        width:100%;
-        height: 35%;
-    }
-    .perfomance{
+    .AsknQuestBlk{
+        width: 32%;
         height: 100%;
-        width: auto;
-    }
-    .aboutPerf{
-        width: 45%;
-    }
-    .titlePerf{
-        font-size:5vmin;
-    }
-    .datePrice{
-        font-size:2.4vmin;
-    }
-    .aboutPerfTxt{
-        font-size: 2.4vmin;
-        width: 90%;
-    }
-    .morePerfAbout{
-        font-size: 2.4vmin;
-    }
-    #moreBtn{
-        height: 5%;
-        width: 40%;
-        font-size: 2.4vmin;
-    }
-
-
-    
-
-    /*WE ARE*/
-
-
-    .weAre{
-        width: 91.8vmin;
-        height: 45vmin;
-    }
-    .sliderCircle{
-        width: 15px;
-        height: 15px;
-    }
-
-    .AskNQuestion{
-        width: 91vmin;
-        height: 55vmax;
-        align-self: center;
-    }
-    .threeBlocks{
-        justify-content: space-between;
-        width: 100%;
-        height: 60%;
-    }
-    .askNothing{
-        display: none;
+        border-radius: 1vmin;
+        box-shadow: 0.3vmin 0.5vmin 0.5vmin 0.07vmin rgba(57, 37, 27, 0.2);
     }
     .ask{
-        font-size: 2.6vmin;
-    }
-    .question{
         font-size: 2.4vmin;
         width: 90%;
     }
-
-
-    /*MAP N HOURS*/
-
-
+    .question{
+        font-size: 2vmin;
+        width: 90%;
+    }
+    /*MAP N HOUR*/
     .mapNHours{
         width: 85vmin;
-        height: 60vmax;
+    }
+    #map{
+        width: 40vmin;
+        height: 50vmin;
     }
     #beforeMap{
-        height: 80%;
-        width: 43%;
+        width: 35vmin;
+        height: 45vmin;
     }
     .headhour{
-        font-size: 5vmin;
+        font-size: 3vmin;
+    }
+    .hours{
+        height: 80vmin;
+        width:100%;
+        font-size: 3vmin;
     }
     .hourDay{
-        font-size: 4vmin;
-    }
-    
-    
-}
-/*TABLET LANDSCAPE TITLE*/
-@media (min-width:768px) and (max-width:1440px) and (orientation:landscape) {
-
-    #mainHeader{
-        height: 82vmin;
-    }
-    #intoHeader{
-        height: 60%;
-    }
-
-    #soon{
-        height: 170vmin;
-    }
-
-    .weAre{
-        height: 75vmin;
-    }
-
-    .sliderCircle{
-        width: 25px;
-        height: 25px;
-    }
-
-    .AskNQuestion{
-        height: 80vmin;
-    }
-
-    .mapNHours{
-        height: 100vmin;
-    }
-    #beforeMap{
-        height: 80%;
-    }
-    .hours>*{
-        font-size: 5vmin;
-    }
-
-
-}
-/*BIG SCREEN TITLE*/
-@media (min-width:1441px) {
-    .AskNQuestion{
-        height: 100vmin;
-    }
-}
-
-
-
-
-
-
-
-
-               /*PLACE ORDER*/         
- /*TABLET PORTRAIT
- @media (min-width:600px) and (max-width:1024px) and (orientation:portrait){
-     body{
-         background-color: orange;
-     }
-     
- }
- /*TABLET LANSCAPE
- @media (min-width:768px) and (max-width:1440px) and (orientation:landscape) {
-     body{
-         background-color: yellow;
-     }
- }
- /*BIG SCREEN
- @media (min-width:1200px) and (orientation:landscape){
-     body{
-         background-color: green;
-     }
- }*/
-
-
-                        
-
-
-                       
-
-
-
-
-                        /*LOGIN MODAL*/
-@media all {
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #titleLogIn{
-        font-size: 4vmax;
-        margin-bottom: 5%;
-        background-color: red;
-        align-self: center;
-    }
-    
-    #logInModal>p{
-        display: flex;
-    }
-    #logInModal>input{
-        border-radius: 0.8vmax;
-        height: 12%;
-        padding:0 3%;
-        width: 93%;
-        font-size: 1.4vmax;
-        color: #6C5C59;
-        font-family: 'Raleway';border: 0.1vmax solid rgba(227, 211, 210, 0.3);
-        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
-    }
-    #logIn>label{
-        font-size: 1.6vmax;
-    }
-    #buttonsLogIn{
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1.6vmax;
-        height: 10%;
-        width: 98%;
-        display: flex;
-        flex-direction: row;
-    }
-    #buttonRightLogIn, #buttonRightSignIn{
-        background-color: #39251B;
-        height: 100%;
-        border-radius: 0.5vmax;
-        color: #B68F6E;
-        align-items: center;
-        justify-content: center;
-    }
-    #buttonsLogIn>*{
-        border: transparent;
-    }
-    #buttonLeftLogIn, #buttonLeftSignIn{
-        color: #39251B;
-        height: 100%;
-        width: 45%;
-        align-items: center;
-    }
-    #buttonLeftSignIn:hover, #buttonLeftLogIn:hover{
-        text-decoration: underline;
-    }
-    #rememBerPassword{
-        align-self: center;
-        width: 50%;
-        color: #39251B;
-        font-size: 1.2vmax;
-        display: flex;
-        flex-direction: row;
-    }
-    #recover{
-        color: #6C5C59;
-        padding-left: 3%;
-    }
-    #recover:hover{
-        color: #6C5C59;
-        text-decoration: underline;
-    }
-    #buttonRight{
-            justify-content: space-between;
-            align-items: center;
-            align-self: center;
-            font-size: 1.6vmax;
-            display: flex;
-            flex-direction: row;
-            height: 3.2vmax;
-            width: 100%;
-    }
-    #logInModal{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 40vmax;
-        font-family: 'Raleway';
-        color: #39251B;
-        padding: 2% 4%;
-        height: 30vmax;
-        transition: all 1s ease-in;
-        transform: translate(-50%,-50%);
-        background-color: white;
-        border-radius: 1vmax;
-        position: fixed;
-        left: 50%; 
-        top: -50%;
-        z-index: 4;
-        overflow: auto; 
-    }
-}
-
-#noneBeforeModal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(18, 6, 2, 0.63);
-    visibility: hidden;
-    z-index: 2;
-}
-
-                        /*SIGN UP*/
-
-@media all{
-    #signUpForm{
-        position: fixed; 
-        top: -50%;
-        left: 50%;
-        background-color: white;
-        border-radius: 1vmax;
-        z-index: 5;
-        overflow: hidden; 
-        width: 40%;
-        height: 80%;
-        transition: all 1s ease-in;
-        display: flex;
-        transform: translate(-50%,-50%);
-        flex-direction: column;
-        justify-content: space-between;
-        border-radius: 1vmax;
-        color: #39251B;
-        padding: 2% 4%;
-        font-family: 'Raleway';
-        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
-        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
-    }
-    #buttonsSignUp>*{
-        border: transparent;
-    }
-    .christ{
-        position: absolute;
-        width: 5%;
-        right: 5%;
-        top: 5%;
-    }
-    #twoInputs>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 49%;
-    }
-    #twoInputs>div>input{
-        display: flex;
-        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
         width: 90%;
-        height: 45%;
-        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
+        font-size: 3vmin;
     }
-    #twoInputs{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 99%;
-        height: 5.5vmax;
+    #weekEnd{
+        width: 65%;
     }
-    #signUpForm>label{
-        align-items: start;
-        font-size: 1.4vmax;
-    }
-    #twoInputs>div{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    #buttonsSignUp{
-        justify-content: space-between;
-        align-items: center;
-        align-self: center;
-        font-size: 1.6vmax;
-        display: flex;
-        flex-direction: row;
-        height: 3.2vmax;
+    #longTime{
         width: 100%;
     }
-    #signUpForm>input{
-        height: 2.2vmax;
-        width: 90%;
-        border-radius: 0.3vmax;
-        align-items: center;
-        justify-content: center;
-        padding: 2% 4%;
-        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
-        font-family: 'Raleway';
-        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
-        font-size: 1.2vmax;
-        color: #6C5C59;
-    }
-    #titleSignUp{
-        font-size: 3vmax;
-        margin-bottom: 5%;
-        background-color: red;
-        align-self: center;
-    } 
 }
-                                       
-                        
-
-                        /*MODAL DELETE*/
-@media all {
-
-    #adminDelete{
-        display: flex;
-        height: 35%;
-        width: 55%;
-        align-items: center;
-        justify-content: center;
-        font-size: 3vmax;
-        position: fixed;
-        background-color: white;
-        z-index: 5;
-        top:-70%;
-        text-align: center;
-        overflow: hidden; 
-        transition: all 1s ease-in;
-        flex-direction: column;
-        font-family: 'Raleway';
-        color: #39251B;
-        border-radius: 0.6vmax;
-        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
-        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
-    }
-    #adminDelete>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 90%;
-        height: 85%;
-    }
-    #delete{
-        font-size: 2vmax;
-    }
-    #christ{
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        height: 15%;
-    }
-    #deleteButtons{
-        display: flex;
-        width: 95%;
-        justify-content: space-between;
-    }
-    #deleteButtons>button{
-        display: flex;
-        color: #E3D3D2;
-        width: 30%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: #6C5C59;
-        font-family: 'Raleway';
-        border: 0.1vmax solid rgba(108, 92, 89, 0.675);
-        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
-        border-radius: 0.3vmax;
-        font-size: 2.2vmax;
-    }
-    #deleteButtons>button:hover{
-        background-color: rgba(98, 0, 0, 0.7);
-    }
-}
-@media (orientation:portrait) {
-    #adminDelete{
-        font-size: 5vmin;
-    }
-    #deleteButtons>button{
-        font-size: 4.5vmin;
-    }
-}
- 
                         /*CREATE PERFOMANCE*/
 @media all {
     #createPerfomance{
