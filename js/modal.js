@@ -11,7 +11,6 @@ let signUpLeft=document.getElementById('buttonLeftSignIn');
 NavLogIn.addEventListener('click', function(){
     logIn.style.top="50%";
     bg.style.visibility="visible";
-
 });
 /*SIGN UP FORM VISIBLE*/
 logInLeft.addEventListener('click', function(){
