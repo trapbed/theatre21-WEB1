@@ -3205,6 +3205,58 @@ html, body{
         flex-direction: row;
     }
 }
+@media (orientation:portrait) {
+    .nothingCreate{
+        height: 6vmin;
+    }
+    .nothingCreate1{
+        height: 4.5vmin;
+    }
+    .labelPerf{
+        font-size: 3vmin;
+    }
+    .inputPerf{
+        border-radius: 0.3vmin;
+        height: 6vmin;
+        width: 19vmin;
+        border: 0.1vmin solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
+        padding: 0 2vmin;
+        font-size: 2vmin;
+    }
+    .optionPerf{
+        width: 20vmin;
+        border: 0.1vmin solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
+        padding: 0 2vmin;
+        border-radius: 0.6vmin;
+        font-size: 2vmin;
+        height: 6vmin;
+    }
+    #photoClick{
+        width: 19vmin;
+        height: 6vmin;
+        font-size: 2vmin;
+        border: 0.1vmin solid rgba(108, 92, 89, 0.675);
+        box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
+        border-radius: 0.6vmin;
+    }
+    .textPerf{
+        font-size: 2vmin;
+        width: 36vmin;
+        height: 15vmin;
+        box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
+    }
+    #namePerf{
+        width: 60vmin;
+    }
+    #date{
+        width: 15vmin;
+    }
+    .inputPerf[type="time"]{
+        width: 8vmin;
+    }
+}
 
                         /*PLACE*/
 @media all {
