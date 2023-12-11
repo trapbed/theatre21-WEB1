@@ -47,38 +47,41 @@ html, body{
 }
                         /*BACK*/
 @media all {
-    #toTitlefromTick{
+    #forArrow{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        height: 8vmin;
+        flex-direction: row;
+        width: 24vmax;
+        height: 4vmax;
     }
-    #toTitlefromTick>img{
+    #arrow{
         display: flex;
-        height: 50%;
+        width: auto;
+        height: 2.7vmax;
     }
-    #toTitlefromTick>span{
+    #textArrow{
         display: flex;
-        color: #39251B;
-        font-size: 2vmax;
         font-family: 'Raleway';
-    }
+        font-size: 2vmax;
+        color: #39251B;
+    } 
 }
 @media (orientation:portrait) {
-    #toTitlefromTick{
-        height: 5vmax;
-        align-items: center;
+    #forArrow{
+        width: 24vmin;
+        height: 4vmin;
     }
-    #toTitlefromTick>img{
-        height: 50%;
+    #arrow{
+        height: 3vmin;
     }
-    #toTitlefromTick>span{
-        font-size: 3vmin;
+    #textArrow{
+        font-size: 2vmin;
     }
 }
 #fooCol>a{
     color: #B68F6E;
 }
-
                         /*LOGIN MODAL*/
 @media all {
     body{
@@ -200,7 +203,7 @@ html, body{
         box-shadow: 0.2vmin 0.02vmin 0.4vmin rgba(57, 37, 27, 0.2);
     }
     #logInModal>label{
-        font-size: 4vmin;
+        font-size: 3vmin;
     }
     #logInModal>input{
         font-size: 3vmin;
@@ -487,7 +490,6 @@ html, body{
         font-size: 4.2vmin;
     }
 }
-
                         /*ABOUT WE*/
 @media all{
     body{
@@ -512,7 +514,10 @@ html, body{
     }
     #bigImgWe{
         display: flex;
+        height: 40vmax;
+        background-size: cover;
         width: 90%;
+        background-image: url(../images/about1.png);
     } 
     #elemSliderWe{
         display: flex;
@@ -1290,7 +1295,7 @@ html, body{
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-        width: 35vmax;
+        width: 25vmax;
         font-size: 2.4vmax;
     }
     #lilAboutPerf>div>span{
@@ -1334,6 +1339,7 @@ html, body{
     #buyOrNextStep{
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         width: 85%;
     }
@@ -1483,6 +1489,13 @@ html, body{
     #titlePlace>div{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    #titlePlace1{
+        width: 25vmax;
+    }
+    #titlePlace2{
+        width: 22.5vmax;
     }
     #titlePlace1>span{
         display: flex;
@@ -1517,7 +1530,7 @@ html, body{
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        height: 60%;
+        height: 70%;
         border: 0.03vmax solid rgba(57, 37, 27, 0.2);
         border-radius: 1vmax;
         box-shadow: 0.3vmax 0.5vmin 0.5vmin 0.07vmax rgba(57, 37, 27, 0.2);
@@ -1586,7 +1599,7 @@ html, body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 7%;
+        height: 15%;
         width: 80%;
     }
     #scenePrice>div{
@@ -1631,10 +1644,24 @@ html, body{
         height: 18%;
         width: 80%;
     }
+    #placeArrow{
+        height: 20%;
+        margin-left: 10%;
+        align-self: start;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 24vmax;
+    }
+    /* .aboutTick{
+        visibility: hidden;
+    } */
     #placeNext>div{
         display: flex;
         flex-direction: row;
-        width: auto;
+        width: 50%;
         height: 90%;
     }
     #placeNext>div>div{
@@ -1642,7 +1669,7 @@ html, body{
         flex-direction: column;
         justify-content: space-evenly;
         height: 100%;
-        width: 12vmax;
+        width: 10vmax;
         padding: 2%;
         box-shadow: 0.2vmax 0.3vmin 0.3vmax 0.1vmax rgba(57, 37, 27, 0.2);
         border: 0.1vmax solid rgba(227, 211, 210, 0.3);
@@ -1660,9 +1687,9 @@ html, body{
         border: 0.1vmax solid rgba(227, 211, 210, 0.3);
         box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
         background-color: transparent;
-        width: 15%;
+        width: 15vmax;
         color: #39251B;
-        font-size: 1.8vmax;
+        font-size: 2vmax;
         font-family: 'Raleway';
         align-items: center;
         justify-content: center;
@@ -1686,10 +1713,16 @@ html, body{
         font-size: 6vmin;
     }
     #titlePlace2 > span{
-        font-size: 4.5vmin;
+        font-size: 4vmin;
     }
     #scenePrice > div > span{
         font-size: 3vmin;
+    }
+    #titlePlace1{
+        width: 41vmin;
+    }
+    #titlePlace2{
+        width: 37vmin;
     }
     #scenePlace{
         width: 90%;
@@ -1769,7 +1802,9 @@ html, body{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
+        border-radius: 0.6vmax;
+        border: 0.1vmax solid rgba(227, 211, 210, 0.3);
+        box-shadow: 0.2vmax 0.02vmax 0.4vmax rgba(57, 37, 27, 0.2);
         width: 100%;
         height: 80%;
     }
@@ -1884,7 +1919,8 @@ html, body{
     }
     .formPlace{
         height: 2.8vmax;
-        width: 90%;
+        width: 100%;
+        padding: 2%;
         border-radius: 1vmax;
         background-color: transparent;
         font-size: 1.4vmax;
@@ -1987,8 +2023,8 @@ html, body{
         font-size: 5vmin;
     }
     .formPlace{
-        height: 9vmin;
-        width: 90vmin;
+        height: 5vmin;
+        width: 86vmin;
     }
     .placeNRow>span{
         font-size: 3.4vmin;
@@ -2402,82 +2438,157 @@ html, body{
 }
                         /*NAVIGATION*/
 @media all {
+    #forArrow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 24vmax;
+        height: 4vmax;
+    }
+    #arrow{
+        display: flex;
+        width: auto;
+        height: 2.7vmax;
+    }
+    #textArrow{
+        display: flex;
+        font-family: 'Raleway';
+        font-size: 2vmax;
+        color: #39251B;
+    } 
+    #nothing{
+        display: flex;
+        width: 100%;
+        height: 5vmax;
+    }
     nav{
+        width: 100%;
+        height: 5vmax;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #39251B;
+    }
+    nav>a{
+        text-decoration: none;
+    }
+    nav>*{
+        text-decoration: underline;
+    }
+    .forNavigation{
+        display: flex;
+        text-decoration: none;
+        font-family: 'Playfair';
+        font-size: 2vmax;
+        color: #B68F6E;
+    }
+    .accNav{
+        display: flex;
+        text-decoration: none;
+        font-family: 'Playfair';
+        font-size: 2vmax;
+        color: #B68F6E;
+    }
+    .accNav:hover{
+        text-decoration: underline;
+    }
+    .forNavigation:hover{
+        text-decoration: underline;
+    }
+    
+}
+@media (orientation:portrait) {
+    #forArrow{
+         width: 24vmin;
+        height: 4vmin;
+    }
+    #arrow{
+        height: 2.7vmin;
+    }
+    #textArrow{
+        font-size: 2vmax;
+    } 
+    #nothing{
+        height: 5vmin;
+    }
+    nav{
+        height: 6vmin;
+    }
+    .forNavigation{
+        font-size: 2.4vmin;
+    }
+}
+                        /*FOOTER*/
+@media all {
+    footer{
+        width: 100%;
+        height: 20vmax;
+        background-color: #39251B;
+        color: #B68F6E;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 5vmax;
-        background-color: #39251B;
+        justify-content: space-evenly;
     }
-    .navigation{
+    #logoFooter{
+        width: 15vmax;
+        height: 7vmax;
+        background-image: url(../images/logoFooter.png);
+        background-size: cover;
+    }
+    .footerRow{
         display: flex;
-        font-family: 'Playfair';
-        color: #B68F6E;
-        font-size: 2vmax;
+        flex-direction: column;
+        height: 70%;
+        width: 20%;
     }
-    .navigation:hover{
+    .nothingFooter{
+        height: 2vmax;
+        background-color: green;
+    }
+    #txtRow1{
+        align-items: center;
+    }
+    #txtRow2{
+        align-items: center;
+    }
+    #txtRow3{
+        align-items: end;
+    }
+    .footerRow>*{
+        font-family: 'Raleway';
+        font-size: 1.6vmax;
+        color: #B68F6E;
+        line-height: 180%;
+        text-decoration: none;
+    }
+    .footerRow>*:hover{
         text-decoration: underline;
     }
 }
-                    /*FOOTER*/
-@media all {
+@media (orientation:portrait) {
     footer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #39251B;
         width: 100%;
-        height: 22vmax;
+        height: 25vmin;
     }
-    .intoFoo{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: #B68F6E;
-        width: 90%;
-        height: 60%;
+    #logoFooter{
+        width: 18vmin;
+        height: 9vmin
     }
-    #intoFooImg{
-        display: flex;
+    .footerRow{
+        height: 70%;
         width: 18%;
-        height: 55%;
     }
-    .fooCol{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .nothingFooter{
+        height: 2vmin;
     }
-    .intoFoo>div>a, .intoFoo>div>span{
-        display: flex;
-        font-family: 'Raleway';
-        font-size: 1.6vmax;
-        line-height: 180%;
-    }
-        
-    .intoFoo>div>a:visited{
-        color: #B68F6E;
-    }
-    .intoFoo>div>a:hover{
-        color: #6C5C59;
-    }
-    .fooCol>div{
-        display: flex;
-        height: 10%;
-    }
-    .fooBold{
-        display: flex;
-        font-weight: bolder;
+    .footerRow>*{
+        font-size: 2.2vmin;
     }
 }
-@media all and (orientation:portrait) {
-    #intoFooImg{
-    height: 9vmin;
-    width: 20vmin;
-    }
-}
-                     /*TITLE SCREEN*/
+                         /*TITLE SCREEN*/
 /*ALL TITLE*/
 @media all {
     /*EMPTY*/
@@ -2666,17 +2777,20 @@ html, body{
         justify-content: space-between;
         align-items: center;
         width: 90vmax;
-        height:auto;
+        height:40vmax;
     }
     #weAreImg{
         display: flex;
         width: 85vmax;
-        height: auto;
+        background-image: url(../images/title1.png);
+        background-size: cover;
+        height: 40vmax;
     }
     .weAreSlider{
         display: flex;
         flex-direction: column;
         height: 20vmax;
+        align-items: center;
         justify-content: space-between;
     }
     .sliderCircle{
@@ -2997,7 +3111,6 @@ html, body{
         display: flex;
         flex-direction: column;
         width: 90%;
-        background-color: red;
         height: 190vmax;
     }
     .perfomanceAdmin{
@@ -3005,7 +3118,6 @@ html, body{
         flex-direction: column;
         width: 100%;
         height: 85vmax;
-        background-color: pink;
 
     }
     .adminPerfomaceWithoutBtn{
@@ -3118,7 +3230,7 @@ html, body{
 }
                         /*CREATE PERFOMANCE*/
 @media all {
-    #createPerfomance{
+    .createPerfomance{
         width: 90%;
         font-family: 'Raleway';
     }
@@ -3257,7 +3369,6 @@ html, body{
         width: 8vmin;
     }
 }
-
                         /*PLACE*/
 @media all {
     #createPlace{
@@ -3296,14 +3407,14 @@ html, body{
         align-items: center;
         width: 100%;
     }
-    #lineCreate{
+    .lineCreate{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 45vmax;
         height: 3vmax;
     }
-    #lineCreate>button{
+    .lineCreate>button{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -3338,7 +3449,7 @@ html, body{
         font-family: 'Raleway';
         font-size: 3vmax;
         color: #39251B;
-        width: 45vmax;
+        width: 43vmax;
         height: 8vmax;
         background-color: #D9D9D9;
     }
@@ -3394,19 +3505,19 @@ html, body{
         font-size: 1.6vmax;
         line-height: 160%;
     }
-    #firstColor{
+    .firstColor{
         background-color: #39251B;
         color: #E3D3D2;
     }
-    #secondColor{
+    .secondColor{
         background-color: #B68F6E;
         color: #39251B;
     }
-    #thirdColor{
+    .thirdColor{
         background-color: #6C5C59;
         color: #39251B;
     }
-    #fourthColor{
+    .fourthColor{
         background-color: #E3D3D2;
         color: #39251B;
     }
@@ -3431,5 +3542,209 @@ html, body{
     #buttonsCreatePlace>button:hover{
         background-color: #39251B;
         color: #B68F6E;
+    }
+}
+                        /*ACCOUNT*/
+@media all {
+    .accountMT1{
+        width: 100%;
+        height: 5vmax;
+    }
+    .accountMT2{
+        width: 100%;
+        height: 3vmax;
+    }
+    #accountMain{
+        display: flex;
+        flex-direction: column;
+        width: 90vmax;
+    }
+    #accountMain>*>h2{
+        font-weight: 100;
+        font-family: 'Raleway';
+        color: #39251B;
+        font-size: 3vmax;
+    }
+    #accountMain>form>label{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway';
+        color: #39251B;
+        line-height: 200%;
+        font-size: 1.6vmax;
+    }
+    #accountMain>form>label>input{
+        padding: 1% 2%;
+        border-radius: 0.6vmax;
+        color: #39251B;
+        height: 2vmax;
+        width: 40vmax;
+        font-family: 'Raleway';
+        font-size: 1.4vmax;
+    }
+    #accountMain>form>div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 88vmax;
+    }
+    #accountMain>form>div>label{
+        display: flex;
+        flex-direction: column;
+        line-height: 180%;
+        font-family: 'Raleway';
+        color: #39251B;
+        font-size: 1.6vmax;
+    }
+    #accountMain>form>div>label>input{
+        font-family: 'Raleway';
+        font-size: 1.4vmax;
+        border-radius: 0.6vmax;
+        width: 40vmax;
+        height: 3vmax;
+        padding: 1% 2%;
+    }
+    #accountMain>form>button{
+        background-color: transparent;
+        font-family: 'Raleway';
+        color: #39251B;
+        font-size: 1.4vmax;
+        height: 4vmax;
+        width: 15vmax;
+        border-radius: 0.6vmax;
+    }
+}
+@media (orientation:portrait) {
+    .accountMT1{
+        height: 8vmin;
+    }
+    .accountMT2{
+        height: 5vmin;
+    }
+    #accountMT3{
+        display: flex;
+        width: 100%;
+        height: 5vmin;
+    }
+    #accountMain{
+        width: 90vmin;
+    }
+    #accountMain>*>h2{
+        font-size: 5vmin;
+    }
+    #accountMain>form>label{
+        font-size: 3.6vmin;
+    }
+    #accountMain>form>label>input{
+        border-radius: 1vmin;
+        height: 6vmin;
+        width: 40vmin;
+        font-size: 2.8vmin;
+    }
+    #accountMain>form>div{
+        flex-direction: column;
+        width: 88vmin;
+    }
+    #accountMain>form>div>label{
+        font-size: 3.6vmin;
+    }
+    #accountMain>form>div>label>input{
+        font-size: 2.8vmin;
+        border-radius: 1vmin;
+        width: 40vmin;
+        height: 6vmin;
+    }
+    #accountMain>form>button{
+        font-size: 3.2vmin;
+        height: 6vmin;
+        width: 30vmin;
+        border-radius: 1vmin
+    }
+}
+                        /*MY TICKETS*/
+@media all {
+    .myTickMT{
+        display: flex;
+        width: 100%;
+        height: 5vmax;
+    }
+    .myTickMTLil{
+        display: flex;
+        width: 100%;
+        height: 2vmax;
+    }
+    #mainMyTickets{
+        display: flex;
+        flex-direction: column;
+        width: 90vmax;
+    }
+    #titleMyTickets{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90vmax;
+        font-family: 'Raleway';
+        font-size: 2.4vmax;
+    }
+    .ticketMyTicket{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2vmax;
+        border-radius: 0.6vmax;
+        border: transparent;
+        box-shadow: 0.4vmin 0.04vmin 0.8vmin rgba(57, 37, 27, 0.2);
+        font-family: 'Raleway';
+        width: 88vmax;
+        height: 4vmax;
+        padding: 1% 2%;
+    }
+    .ticketMyTicket>button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        font-size: 2vmax;
+        width: 12vmax;
+        border-radius: 0.6vmax;
+        border: transparent;
+        box-shadow: 0.4vmin 0.04vmin 0.8vmin rgba(57, 37, 27, 0.2);
+        background-color: transparent;
+        height: 3.5vmax;
+        padding: 1% 2%;
+    }
+}
+@media (orientation:portrait){
+    .myTickMT{
+        height: 10vmin;
+    }
+    .myTickMTLil{
+        height: 4vmin;
+    }
+    #mainMyTickets{
+        width: 90vmin;
+    }
+    #titleMyTickets{
+        justify-content: space-around;
+        width: 90vmin;
+        font-size: 4.8vmin;
+    }
+    .ticketMyTicket{
+        font-size: 4vmin;
+        border-radius: 1vmin;
+        width: 88vmin;
+        height: 8vmin;
+    }
+    .ticketMyTicket>button{
+        font-size: 4vmin;
+        width: 24vmin;
+        border-radius: 1vmin;
+        height: 7vmin;
+    }
+    .maybe{
+        display: none;
+    }
+    #underFooMT{
+        height: 100vmin;
     }
 }

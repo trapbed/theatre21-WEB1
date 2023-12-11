@@ -8,6 +8,6 @@ form.addEventListener('submit', function(){
         window.location.href="adminPannel.html";
     }
     else{
-        /*ИЗМЕНЕНИЕ НАЗВАНИЯ КНОПКИ ВОЙТИ*/
+        window.location.href="../html/account.html"
     }
 });

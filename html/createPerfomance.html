@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создание представления</title>
+    <title>Пищеблок</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <div id="forForm">
                 <div id="placeNSceneCreate">
                     <div id="placesCreate">
-                        <div id="lineCreate">
+                        <div class="lineCreate">
                             <span  class="lines">4</span>
                             <button class="placeModal4" value="1">1</button>
                             <button class="placeModal4" value="2">2</button>
@@ -31,7 +31,7 @@
                             <button class="placeModal4" value="11">11</button>
                             <button class="placeModal4" value="12">12</button>
                         </div>
-                        <div id="lineCreate">
+                        <div class="lineCreate">
                             <span  class="lines">3</span>
                             <button class="placeModal3" value="1">1</button>
                             <button class="placeModal3" value="2">2</button>
@@ -46,7 +46,7 @@
                             <button class="placeModal3" value="11">11</button>
                             <button class="placeModal3" value="12">12</button>
                         </div>
-                        <div id="lineCreate">
+                        <div class="lineCreate">
                             <span  class="lines">2</span>
                             <button class="placeModal2" value="1">1</button>
                             <button class="placeModal2" value="2">2</button>
@@ -61,7 +61,7 @@
                             <button class="placeModal2" value="11">11</button>
                             <button class="placeModal2" value="12">12</button>
                         </div>
-                        <div id="lineCreate">
+                        <div class="lineCreate">
                             <span  class="lines">1</span>
                             <button class="placeModal1" value="1">1</button>
                             <button class="placeModal1" value="2">2</button>
@@ -87,15 +87,15 @@
                     <div class="setColorNPrice">
                         <span class="titleSet">4-ая линия</span>
                         <div class="priceNColor">
-                            <label for="setPrice">Укажите цену
-                                <input id="setPrice" type="text">
+                            <label for="p4">Укажите цену
+                                <input class="setPrice" id="p4" type="text">
                             </label>
-                            <label for="setColor">Выберете цвет
-                                <select name="setColor" id="setColor">
-                                    <option id="firstColor" value="#39251B">#39251B</option>
-                                    <option id="secondColor" value="#B68F6E">#B68F6E</option>
-                                    <option id="thirdColor" value="#6C5C59">#6C5C59</option>
-                                    <option id="fourthColor" value="#E3D3D2">#E3D3D2</option>
+                            <label for="c4">Выберете цвет
+                                <select name="setColor" id="c4" class="setColor">
+                                    <option class="firstColor" value="#39251B">#39251B</option>
+                                    <option class="secondColor" value="#B68F6E">#B68F6E</option>
+                                    <option class="thirdColor" value="#6C5C59">#6C5C59</option>
+                                    <option class="fourthColor" value="#E3D3D2">#E3D3D2</option>
                                 </select>
                             </label>
                         </div>
@@ -104,15 +104,15 @@
                     <div class="setColorNPrice">
                         <span class="titleSet">3-ая линия</span>
                         <div class="priceNColor">
-                            <label for="setPrice">Укажите цену
-                                <input id="setPrice" type="text">
+                            <label for="p3">Укажите цену
+                                <input class="setPrice" id="p3" type="text">
                             </label>
-                            <label for="setColor">Выберете цвет
-                                <select name="setColor" id="setColor">
-                                    <option id="firstColor" value="#39251B">#39251B</option>
-                                    <option id="secondColor" value="#B68F6E">#B68F6E</option>
-                                    <option id="thirdColor" value="#6C5C59">#6C5C59</option>
-                                    <option id="fourthColor" value="#E3D3D2">#E3D3D2</option>
+                            <label for="c3">Выберете цвет
+                                <select name="setColor" id="c3" class="setColor">
+                                    <option class="firstColor" value="#39251B">#39251B</option>
+                                    <option class="secondColor" value="#B68F6E">#B68F6E</option>
+                                    <option class="thirdColor" value="#6C5C59">#6C5C59</option>
+                                    <option class="fourthColor" value="#E3D3D2">#E3D3D2</option>
                                 </select>
                             </label>
                         </div>
@@ -121,15 +121,15 @@
                     <div class="setColorNPrice">
                         <span class="titleSet">2-ая линия</span>
                         <div class="priceNColor">
-                            <label for="setPrice">Укажите цену
-                                <input id="setPrice" type="text">
+                            <label for="p2">Укажите цену
+                                <input class="setPrice" id="p2" type="text">
                             </label>
-                            <label for="setColor">Выберете цвет
-                                <select name="setColor" id="setColor">
-                                    <option id="firstColor" value="#39251B">#39251B</option>
-                                    <option id="secondColor" value="#B68F6E">#B68F6E</option>
-                                    <option id="thirdColor" value="#6C5C59">#6C5C59</option>
-                                    <option id="fourthColor" value="#E3D3D2">#E3D3D2</option>
+                            <label for="c2">Выберете цвет
+                                <select name="setColor" id="c2" class="setColor">
+                                    <option class="firstColor" value="#39251B">#39251B</option>
+                                    <option class="secondColor" value="#B68F6E">#B68F6E</option>
+                                    <option class="thirdColor" value="#6C5C59">#6C5C59</option>
+                                    <option class="fourthColor" value="#E3D3D2">#E3D3D2</option>
                                 </select>
                             </label>
                         </div>
@@ -138,11 +138,11 @@
                     <div class="setColorNPrice">
                         <span class="titleSet">1-ая линия</span>
                         <div class="priceNColor">
-                            <label for="setPrice">Укажите цену
-                                <input id="setPrice" type="text">
+                            <label for="p1">Укажите цену
+                                <input class="setPrice" id="p1" type="text">
                             </label>
-                            <label for="setColor">Выберете цвет
-                                <select name="setColor" id="setColor">
+                            <label for="c1">Выберете цвет
+                                <select name="setColor" id="c1" class="setColor">
                                     <option id="firstColor" value="#39251B">#39251B</option>
                                     <option id="secondColor" value="#B68F6E">#B68F6E</option>
                                     <option id="thirdColor" value="#6C5C59">#6C5C59</option>
@@ -172,18 +172,18 @@
     </a>
 
     <nav>
-        <a class="navigation" id="afisha" href="../html/afisha.html">Афиша</a>
-        <a class="navigation" id="contavts" href="../html/contacts.html">Контакты</a>
-        <a class="navigation" value="" id="logInNav" href="#">Войти</a>
+        <a href="../html/afisha.html" class="forNavigation" >Афиша</a>
+        <a href="../html/contacts.html" class="forNavigation">Контакты</a>
+        <a id="logInNav" class="forNavigation">Войти</a>
     </nav>
+    <div class="nothingCreate"></div>
     
-    <main id="createPerfomance">
-        <div class="nothingCreate"></div>
+    <main class="createPerfomance">
         <form action="go" method="get">
 
             <div class="oneDivCreate">
                 <label class="labelPerf" for="namePerf">Название представления</label>
-                <input class="inputPerf" type="text" id="namePerf">
+                <input class="inputPerf" type="text" id="namePerf" value="Пищеблок">
             </div>
 
             <div class="nothingCreate1"></div>
@@ -223,7 +223,7 @@
 
             <div class="oneDivCreate">
                 <label class="labelPerf" for="date">Дата представления</label>
-                <input class="inputPerf" type="date" id="date">
+                <input class="inputPerf" type="text" id="date">
             </div>
 
             <div class="nothingCreate1"></div>
@@ -244,7 +244,8 @@
 
             <div class="oneDivCreate">
                 <label class="labelPerf" for="description">Описание представления</label>
-                <textarea class="textPerf" name="description" id="description" cols="4" rows="2"></textarea>
+                <textarea class="textPerf" name="description" id="description" cols="4" rows="2">
+                </textarea>
             </div>
 
             <div class="nothingCreate1"></div>
@@ -258,31 +259,32 @@
 
             <div class="oneDivCreate1">
                 <label class="labelPerf" for="photo">Добавить фото</label>
-                <button id="photoClick"><label for="photo">Выберете файл
-                <input class="inputPerf" type="file" id="photo"></label></button>
+                <button id="photoClick"> 
+                <label for="photo">Выберете файл <input class="inputPerf" type="file" id="photo"></label></button>
             </div>
 
             <div class="nothingCreate1"></div>
 
-            <div class="inputPerf" class="oneDivCreate" id="placeBtn">Задать цену билетам</div>
+            <div class="inputPerf" id="placeBtn">Задать цену билетам</div>
             
             <div class="nothingCreate1"></div>
 
             <div id="oneDivCreateRow">
                 <div id="buyOrNextStep" >
-                    <a href="../html/title1.html" id="toTitlefromTick">
-                        <img src="../images/Vector 7.png" id="arrow" alt="arrow">
-                        <span>Вернуться к афише</span>
-                    </a>
+                    <div id="forArrow">
+                        <img id="arrow" src="../images/Vector7.png" alt="стрелка">
+                        <span id="textArrow">Вернуться к афише</span>
+                    </div>
                 </div>
 
-                <input class="inputPerf" type="submit" value="Сохранить" class="">
+                <input class="inputPerf" type="submit" value="Сохранить">
             </div>
 
             <div class="nothingCreate"></div>
 
         </form>
     </main>
+
     <script src="../js/modalPLace.js"></script>
 </body>
 </html>

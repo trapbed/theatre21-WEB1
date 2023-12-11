@@ -14,18 +14,19 @@
             <path d="M3 73.8832C2.99998 87.1379 23.4034 100.104 38.0187 85.6972C51.621 70.2815 38.0187 49.6791 21.9564 51.2639" stroke="#39281B" stroke-width="5"/>
         </svg>
     </a>
+
     <nav>
-        <a class="navigation" id="afisha" href="../html/afisha.html">Афиша</a>
-        <a class="navigation" id="about" href="../html/aboutWe.html">О нас</a>
-        <a class="navigation" id="contavts" href="../html/contacts.html">Контакты</a>
-        <a class="navigation" id="root" href="../html/rools.html">Правила</a>
-        <a class="navigation" id="logInNav" href="#">Войти</a>
+        <a href="../html/afisha.html" class="forNavigation" >Афиша</a>
+        <a href="../html/aboutWe.html" class="forNavigation">О нас</a>
+        <a href="../html/contacts.html" class="forNavigation">Контакты</a>
+        <a href="../html/rools.html" class="forNavigation">Правила</a>
+        <a id="logInNav" class="forNavigation">Войти</a>
     </nav>
     
     <main id="mainTickets">
         <div class="ticketsVoid"></div>
         
-        <section class="oneItemTicket">
+        <div class="oneItemTicket">
             <div class="oneItemTicketLeft">
                 <div class="logoNAgeTickets">
                     <img class="logoTickets" src="../images/logoTickets.png" alt="logo">
@@ -81,7 +82,7 @@
                             Не делитесь билетом в соцсетях. Злоумышленники могут воспользоваться Вашим билетом</span>
                     </div>
                     <div class="icons">
-                        <img src="../../images/dontDrunk.png" alt="dontDrunk">
+                        <img src="../images/dontDrunk.png" alt="dontDrunk">
                         <img src="../images/noWeapon.png" alt="noWeapon">
                         <img src="../images/dontShooting.png" alt="dontShooting">
                         <img src="../images/dontSmoke.png" alt="dontSmoke">
@@ -105,7 +106,7 @@
 
             </div>
 
-        </section>
+        </div>
 
         <div class="buttonsBeforeTick">
             <a class="toRoolsTicket" href="../html/rools.html">Ознакомиться с правилами</a>
@@ -114,7 +115,7 @@
 
         <div class="ticketsVoid"></div>
         
-        <section class="oneItemTicket">
+        <div class="oneItemTicket">
             <div class="oneItemTicketLeft">
                 <div class="logoNAgeTickets">
                     <img class="logoTickets" src="../images/logoTickets.png" alt="logo">
@@ -194,7 +195,7 @@
 
             </div>
 
-        </section>
+        </div>
 
         <div class="buttonsBeforeTick">
             <a class="toRoolsTicket" href="../html/rools.html">Ознакомиться с правилами</a>
@@ -203,7 +204,7 @@
 
         <div class="ticketsVoid"></div>
         
-        <section class="oneItemTicket">
+        <div class="oneItemTicket">
             <div class="oneItemTicketLeft">
                 <div class="logoNAgeTickets">
                     <img class="logoTickets" src="../images/logoTickets.png" alt="logo">
@@ -283,7 +284,7 @@
 
             </div>
 
-        </section>
+        </div>
 
         <div class="buttonsBeforeTick">
             <a class="toRoolsTicket" href="../html/rools.html">Ознакомиться с правилами</a>
@@ -292,36 +293,47 @@
         
         <div class="ticketsVoid"></div>
         
-        <a href="../html/title1.html" id="toTitlefromTick">
-            <svg width="7%" height="16%" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="beforeStepSvgPlace" d="M9 1L2 10L9 19" stroke="#39251B" stroke-width="2"/>
-            </svg>
-            <span>Вернуться на главную</span>
-        </a>
-
+        <div id="forArrow">
+            <img id="arrow" src="../images/Vector7.png" alt="стрелка">
+            <span id="textArrow">Вернуться на главную</span>
+        </div>
+        
+        <div class="ticketsVoid"></div>
     </main>
 
     <footer>
-        <div class="intoFoo">
-            <img id="intoFooImg" alt="logo" src="../images/logoFooter.png">               
-            <div class="fooCol">
-                <span class="fooBold">Театр</span>
-                <div class="fooAll"></div>
-                <a >Фото</a>
-                <a  href="../html/afisha.html">Афиша</a>
-                <a >Труппа</a>
-            </div>
-            <div class="fooCol">
-                <span class="fooBold">Посетителям</span>
-                <div class="fooAll"></div>
-                <a class="fooAll" href="../html/rools.html">Правила</a>
-                <a href="../html/aboutWe.html">О нас</a>
-            </div>
-            <div class="fooCol">
-                <span >+ 7 (952)812 36 72</span>
-                <span >sopr@gmail.com</span>
-            </div>
+        <div class="footerRow" id="imgFooter">
+            <a href="../html/title1.html" id="logoFooter"></a>
+        </div>
+
+        <div class="footerRow" id="txtRow1">
+            <a href="../html/contacts.html">Театр</a>
+            <div class="nothingFooter"></div>
+            <a href="../html/aboutWe.html">Фото</a>
+            <a href="../html/afisha.html">Афиша</a>
+            <a href="../html/aboutWe.html">Труппа</a>
+        </div>
+
+        <div class="footerRow" id="txtRow2">
+            <a href="../html/aboutWe.html">Посетителям</a>
+            <div class="nothingFooter"></div>
+            <a href="../html/rools.html">Правила</a>
+            <a href="../html/aboutWe.html">О нас</a>
+        </div>
+
+        <div class="footerRow" id="txtRow3">
+            <span>+ 7 (952)812 36 72</span>
+            <span>sopr@gmail.com</span>
         </div>
     </footer>
+<script>
+    let save=document.getElementsByClassName('dowmloadTicket');
+    for(let i=0 ; i<save.length;i++){
+        save[i].addEventListener('click', function(e){
+            alert('Ваши билеты сохранены');
+            e.preventDefault();
+        })
+    }
+</script>
 </body>
 </html>

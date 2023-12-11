@@ -61,11 +61,11 @@
     </a>
     
     <nav>
-        <a class="navigation" id="afisha" href="../html/afisha.html">Афиша</a>
-        <a class="navigation" id="about" href="../html/aboutWe.html">О нас</a>
-        <a class="navigation" id="contavts" href="../html/contacts.html">Контакты</a>
-        <a class="navigation" id="root" href="../html/rools.html">Правила</a>
-        <a class="navigation" id="logInNav" href="#">Войти</a>
+        <a href="../html/afisha.html" class="forNavigation" >Афиша</a>
+        <a href="../html/aboutWe.html" class="forNavigation">О нас</a>
+        <a href="../html/contacts.html" class="forNavigation">Контакты</a>
+        <a href="../html/rools.html" class="forNavigation">Правила</a>
+        <a id="logInNav" class="forNavigation">Войти</a>
     </nav>
     
     <main id="mainRool">
@@ -127,27 +127,31 @@
 
 
     <footer>
-        <div class="intoFoo">
-            <img id="intoFooImg" alt="logo" src="../images/logoFooter.png">                
-            <div class="fooCol">
-                <a class="fooHead"><b>Театр</b></a>
-                <span>&nbsp;</span>
-                <a class="fooAll">Фото</a>
-                <a class="fooAll" href="../html/afisha.html">Афиша</a>
-                <a class="fooAll">Труппа</a>
-            </div>
-            <div class="fooCol">
-                <a class="fooHead"><b>Посетителям</b></a>
-                <span>&nbsp;</span>
-                <a class="fooAll" href="../html/rools.html">Правила</a>
-                <a class="fooAll" href="../html/aboutWe.html">О нас</a>
-            </div>
-            <div class="fooCol">
-                <span class="fooAllL">+ 7 (952)812 36 72</span>
-                <span class="fooAllL">sopr@gmail.com</span>
-            </div>
+        <div class="footerRow" id="imgFooter">
+            <a href="../html/title1.html" id="logoFooter"></a>
+        </div>
+
+        <div class="footerRow" id="txtRow1">
+            <a href="../html/contacts.html">Театр</a>
+            <div class="nothingFooter"></div>
+            <a href="../html/aboutWe.html">Фото</a>
+            <a href="../html/afisha.html">Афиша</a>
+            <a href="../html/aboutWe.html">Труппа</a>
+        </div>
+
+        <div class="footerRow" id="txtRow2">
+            <a href="../html/aboutWe.html">Посетителям</a>
+            <div class="nothingFooter"></div>
+            <a href="../html/rools.html">Правила</a>
+            <a href="../html/aboutWe.html">О нас</a>
+        </div>
+
+        <div class="footerRow" id="txtRow3">
+            <span>+ 7 (952)812 36 72</span>
+            <span>sopr@gmail.com</span>
         </div>
     </footer>
+    
     <script src="../js/modal.js"></script>
     <script src="../js/logInCheck.js"></script>
 </body>
