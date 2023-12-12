@@ -5,17 +5,17 @@ let christ=document.getElementById('buttonDelete');
 let cancel=document.getElementById('noDelete');
 let goDelete=document.getElementById('yesDelete');
 let divOut=document.getElementById('perfomancesAdmin');
-let perfomance=document.getElementById('adminPerfomaceWithoutBtn');
+let perfomance=document.getElementById('adminPerfomaceWithoutBtn');//создание переменных
 
-for(let i=0;i<buttonsDelete.length;i++){
-buttonsDelete[i].addEventListener('click', function(){
+for(let i=0;i<buttonsDelete.length;i++){//перебор массива из кнопок
+buttonsDelete[i].addEventListener('click', function(){//применен прослушиватель событий
     bg.style.visibility="visible";
-    delet.style.top="20%";
-    if(cancel.addEventListener('click', function(){
+    delet.style.top="20%";//изменение стилей
+    if(cancel.addEventListener('click', function(){//условие на клик отмены
         bg.style.visibility="hidden";
         delet.style.top="-70%";
     }));
-    else if(christ.addEventListener('click', function(){
+    else if(christ.addEventListener('click', function(){//условие на клик "креста"
         bg.style.visibility="hidden";
         delet.style.top="-70%";
     })){

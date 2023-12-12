@@ -1,8 +1,8 @@
 let big=document.getElementById("bigImgWe");
-let lilImg=document.getElementsByClassName("weImg");
-for(let i=0;i<lilImg.length;i++){
-    lilImg[i].addEventListener('click', function(){
-        switch (i){
+let lilImg=document.getElementsByClassName("weImg");//получение переменных
+for(let i=0;i<lilImg.length;i++){//перебор массива изображений
+    lilImg[i].addEventListener('click', function(){//слушатель событий
+        switch (i){//используем swithch case что бы перебрать и подбирать полученные значения и менять стили для элемента масссива с индексом i
             case 0:
                 big.style.backgroundImage="url(../images/about1.png)";
                 big.style.backgroundSize="cover";

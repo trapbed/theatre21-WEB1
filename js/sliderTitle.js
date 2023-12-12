@@ -1,10 +1,10 @@
 let slider=document.getElementsByClassName('sliderCircle');
-let main=document.getElementById('weAreImg');
-let windowTitle=window.matchMedia("(orientation:portrait)");
+let main=document.getElementById('weAreImg');//получение переменных
+let windowTitle=window.matchMedia("(orientation:portrait)");//медиа запрос
 
-for(let i=0; i<slider.length;i++){
+for(let i=0; i<slider.length;i++){//перебор массива элементов картинок для слайдера
     slider[i].addEventListener('click', function(){
-        if(windowTitle){
+        if(windowTitle){//назначение стилей при медиа запросе, когда расположение экрана портретное
             switch (i){
                 case 0:
                     main.style.backgroundImage="url(../images/title1.png)";
@@ -118,8 +118,8 @@ for(let i=0; i<slider.length;i++){
                     break;
                 }
         }
-        else{
-            switch (i){
+        else{//в ином случае назначение стилей
+            switch (i){//получение i элемента и назначение стилей
             case 0:
                 main.style.backgroundImage="url(../images/title1.png)";
                 slider[i].style.width="2.5vmax";
