@@ -8,6 +8,6 @@ form.addEventListener('submit', function(){
         window.location.href="adminPannel.html";
     }
     else{
-        window.location.href="../html/account.html"
+        window.location.href="account.html";
     }
 });

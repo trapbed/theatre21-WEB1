@@ -33,17 +33,31 @@ html, body{
 }
 
                         /*LOGO UNDER HEADER*/
-#logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vmax;
-    width: 100%;
+@media all {
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vmax;
+        height: 12vmax;
+    }
+    #logoty{
+        width: 15vmax;
+        height: 8vmax;
+    }
 }
-#logoty{
-    display: flex;
-    width: 13vmax;
-    height: 65vmin;
+@media (orientation:portrait) {
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vmin;
+        height: 12vmin;
+    }
+    #logoty{
+        width: 15vmin;
+        height: 8vmin;
+    }
 }
                         /*BACK*/
 @media all {
@@ -1564,7 +1578,7 @@ html, body{
         justify-content: center;
         font-family: 'Raleway';
         font-size: 1.6vmax;
-        width: 6%;
+        width: 6.5%;
         height: 80%;
     }
     #firstLine>button{
@@ -1680,9 +1694,11 @@ html, body{
         font-size: 1.4vmax;
         font-family: 'Raleway';
     }
-    #placeNext>a{
+    #placeBlock>a{
         display: flex;
-        height: 50%;
+        align-self: flex-end;
+        margin: 0 2% 2% 0;
+        height: 5vmax;
         border-radius: 0.5vmax;
         border: 0.1vmax solid rgba(227, 211, 210, 0.3);
         box-shadow: 0.2vmax 0.3vmin 1px 0.07vmax rgba(57, 37, 27, 0.2);
@@ -3011,9 +3027,11 @@ html, body{
     /* WE ARE*/
     .weAre{
         width: 90vmin;
+        height: 40vmin;
     }
     #weAreImg{
         width: 85vmin;
+        height: 40vmin;
     }
     .weAreSlider{
         height: 20vmin;
