@@ -611,6 +611,13 @@ html, body{
         height: 5vmin;
         width: 60%;
     }
+    
+    #bigImgWe{
+        height: 37vmin;
+    } 
+    #elemSliderWe{
+        height: 5vmin;
+    } 
     /*TEXT*/
     #Text1AboutWe{
         height: 40vmin;

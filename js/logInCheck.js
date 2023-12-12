@@ -7,7 +7,7 @@ form.addEventListener('submit', function(){
     if (email.value=="admin@mail.com" && password.value=="admin"){
         window.location.href="adminPannel.html";
     }
-    else{
+    else if (email.value=="user@mail.com"){
         window.location.href="account.html";
-    }
+    };
 });
