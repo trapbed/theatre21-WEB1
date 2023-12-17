@@ -1,14 +1,14 @@
 let slider=document.getElementsByClassName('sliderCircle');
 let main=document.getElementById('weAreImg');//получение переменных
-let windowTitle=window.matchMedia("(orientation:portrait)");//медиа запрос
+let body=document.querySelector('body');
 
 for(let i=0; i<slider.length;i++){//перебор массива элементов картинок для слайдера
     slider[i].addEventListener('click', function(){
-        if(windowTitle){//назначение стилей при медиа запросе, когда расположение экрана портретное
+        if(window.matchMedia("orientation:portrait")){//назначение стилей при медиа запросе, когда расположение экрана портретное
             switch (i){
                 case 0:
-                    main.style.backgroundImage="url(../images/title1.png)";
-                    slider[i].style.width="2.5vmin";
+                    main.style.backgroundImage="url(../images/title1.png)";//замена изображения
+                    slider[i].style.width="2.5vmin";//смена стилей для кнопок слайдера
                     slider[i].style.height="2.5vmin";
                     slider[i].style.backgroundColor="#39251B";
     

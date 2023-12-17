@@ -12,6 +12,23 @@ html, body{
     flex-direction: column;
     align-items: center;
 }
+@media all {
+    input{
+    border: transparent;
+    border-radius: 1vmax;
+    border: transparent;
+    box-shadow: 0.3vmax 0.5vmin 0.5vmin 0.07vmax rgba(57, 37, 27, 0.2);
+}
+}
+@media screen {
+    input{
+        border: transparent;
+        border-radius: 1vmin;
+        border: 0.1vmin solid #39251B;
+        box-shadow: 0.3vmin 0.5vmin 0.5vmin 0.07vmin rgba(57, 37, 27, 0.2);
+    }
+}
+
 
 /*FONTS*/
 
@@ -83,7 +100,7 @@ html, body{
 }
 @media (orientation:portrait) {
     #forArrow{
-        width: 24vmin;
+        width: 21vmin;
         height: 4vmin;
     }
     #arrow{
@@ -139,9 +156,10 @@ html, body{
         border-radius: 0.5vmax;
         color: #B68F6E;
         align-items: center;
-        font-size: 1.6vmax;
-        padding: 1% 2%;
+        font-size: 1.2vmax;
+        padding: 0 2%;
         justify-content: center;
+        font-family: 'Raleway';
     }
     #buttonRightLogIn{
         font-size: 1.4vmax;
@@ -232,7 +250,7 @@ html, body{
         padding: 1% 2%;
     }
     #rememBerPassword{
-        font-size: 1.2vmin;
+        font-size: 2vmin;
     }
     #buttonRight{
         font-size: 1.6vmin;
@@ -275,7 +293,7 @@ html, body{
         z-index: 5;
         overflow: hidden; 
         width: 40vmax;
-        height: 35vmax;
+        height: 37vmax;
         transition: all 1s ease-in;
         display: flex;
         transform: translate(-50%,-50%);
@@ -540,6 +558,10 @@ html, body{
         height: 3vmax;
         width: 40%;
     } 
+    .weImg{
+        width: auto;
+        height: 3vmax;
+    }
     /*TEXT*/
     #Text1AboutWe, #Text2Aboutwe{
         display: flex;
@@ -618,6 +640,10 @@ html, body{
     #elemSliderWe{
         height: 5vmin;
     } 
+    .weImg{
+        width: auto;
+        height: 5vmin;
+    }
     /*TEXT*/
     #Text1AboutWe{
         height: 40vmin;
@@ -1551,7 +1577,7 @@ html, body{
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        height: 70%;
+        height: 90%;
         border: 0.03vmax solid rgba(57, 37, 27, 0.2);
         border-radius: 1vmax;
         box-shadow: 0.3vmax 0.5vmin 0.5vmin 0.07vmax rgba(57, 37, 27, 0.2);
@@ -1719,6 +1745,10 @@ html, body{
     }
     #placeNext>a:active{
         color: #39251B;
+    }
+    #nonePlace{
+        width: 100%;
+        height: 3vmax;
     }
 }
 /*PORTRAIT PLACE*/
@@ -3215,13 +3245,11 @@ html, body{
     }
     #perfomancesAdmin{
         width: 90%;
-        background-color: green;
         height: 190vmin;
     }
     .perfomanceAdmin{
         width: 100%;
         height: 85vmin;
-        background-color: pink;
 
     }
     .adminPerfomaceWithoutBtn{
